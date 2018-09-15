@@ -1,0 +1,149 @@
+/************* TESTING **************/
+.row, .col-lg-10, .col-lg-1 {
+    border: 1px solid black;
+}
+
+/************* FONTS **************/
+
+* {
+    font-family: 'Freight+Sans', sans-serif;
+}
+
+.nav-item {
+    font-family: 'Freight+Sans', 'Roboto', sans-serif;
+}
+
+/************* NAVBAR **************/
+
+#website-logo {
+    width: 50px; 
+    height: 50px;
+}
+
+nav {
+    height: 10vh;
+}
+
+/************* CONTAINER **************/
+
+#about, #skills, #work, #contact {
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+#home {
+    height: 100vh;
+}
+
+/************* CONTACT PAGE **************/
+
+#contact {
+    height: fit-content!important;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+/************* FOOTER **************/
+
+footer {
+    margin-top: 5%;
+}
+
+footer > .col-lg-5 {
+    border: 1px solid green;
+}
+
+.footer__link {
+    color: darkslategray;
+}
+
+/************* DESKTOP **************/
+
+@media only screen and (min-width: 961px) {
+
+    .nav-item:hover {
+        border-bottom: 2px solid rgb(38, 98, 228);
+    }
+
+    #footer__img {
+        text-align: left!important;
+    }
+
+    .footer__text {
+        text-align: right!important;
+    }
+   
+}
+
+/************* TABLET **************/
+
+@media only screen and (min-width:426px) and (max-width:960px) {
+
+    section > .col-lg-1 {
+        display: none;
+    }
+
+    a.nav-item:active {
+        border-bottom: 2px solid rgb(38, 98, 228);
+    }
+
+    .nav-item {
+        width: 100px;
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    #contact {
+        height: fit-content!important;
+    }
+
+    #footer__img {
+        text-align: left!important;
+    }
+
+    .footer__text {
+        text-align: right!important;
+    }
+    
+
+}
+
+/************* MOBILE **************/
+
+@media only screen and (max-width:425px) {
+
+    section > .col-lg-1 {
+        display: none!important;
+    }
+
+    a.nav-item:active {
+        border-bottom: 2px solid rgb(38, 98, 228);
+    }   
+
+    .nav-item {
+        width: 100px;
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    form .col-sm-12 {
+        margin-top: 20px;
+    }
+
+    .no-margin-top {
+        margin-top: 0!important;
+    }
+
+    #btn-divider {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #footer__img, .footer__text {
+        text-align: center!important;
+    }
+}
+
