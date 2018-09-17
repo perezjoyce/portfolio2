@@ -8,7 +8,7 @@
     <title>Joyce Perez</title>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto|Itim|Freight+Sans|Libre+Baskerville|Crimsom+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=|Roboto|Freight+Sans|Montserrat" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -26,12 +26,9 @@
 
     <!-- home -->
     <section class="container-fluid">
-        <section class="row" id="home">
+        <section class="row nested" id="home">
             <div class="col-lg-1">aa</div>
-            <div class="col-lg-10 col-md-12 col-sm-12">
-                <div class="wrap">
-                   <h1 class="display-1">Hello!</h1>
-                </div>				
+            <div class="col-lg-10 col-md-12 col-sm-12">			
             </div>
             <div class="col-lg-1"></div>
         </section>
@@ -39,24 +36,26 @@
     <!-- end of home -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+
         <!-- position indicator -->
         <progress value="0" id="progressBar">
             <div class="progress-container">
                 <span class="progress-bar" id="single"></span>
             </div>
         </progress>
-                  
+      
+        <!-- logo -->
         <a class="navbar-brand ml-lg-5 ml-md-3" href="#home">
             <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="website-logo" alt="personal logo">
         </a>
-        <!-- end of navbar-brand -->
-
+        
+        <!-- toggler -->
         <button class="navbar-toggler mr-lg-5 mr-md-3" type="button" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- end of navbar-toggler -->
 
+        <!-- collapse -->
         <div class="collapse navbar-collapse mr-lg-5 mr-md-3" id="navbar-collapse">
             <div class="navbar-nav text-right ml-auto">
                 <a class="nav-item nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a>
@@ -70,7 +69,7 @@
         </div>
          <!-- end of navbar-collapse -->
     </nav>
-    <!-- end of navbar -->
+    <!-- end of nav -->
 
     <main class="container-fluid">
 
@@ -111,13 +110,13 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-10 col-md-12 col-sm-12">
                 <!-- nested elements -->
-                <div class="container-fluid my-5">
+                <div class="container-fluid nested">
 
                      <!-- first contact row -->
-                    <div class="row mt-3 no-margin-top">
+                    <div class="row">
                         <div class="col-lg-3"></div>
                         <div class="col-lg-6 text-center">
-                            <h1 class="display-6">Get in touch</h1>
+                            <h1 class="display-6">Contact</h1>
                         </div>
                         <div class="col-lg-3"></div>
                     </div>
@@ -125,11 +124,11 @@
 
                     <!-- second contact row -->
                     <div class="row mt-3" id="contact__sub-header">
-                        <div class="col-lg-4 col-md-2 col-sm-1"></div>
-                        <div class="col-lg-4 col-md-8 col-sm-10 text-center">
-                            <p class="mt-3">I’d love to hear about your next project! Please fill out the form below. I will get back to you as soon as I can!</p>
+                        <div class="col-lg-2 col-md-2 col-sm-1"></div>
+                        <div class="col-lg-8 col-md-8 col-sm-10 text-center">
+                            <p class="mt-3">I’d love to hear about your next project! Please fill out the form below & I will get back to you ASAP!</p>
                         </div>
-                        <div class="col-lg-4 col-md-2 col-sm-1"></div>
+                        <div class="col-lg- col-md-2 col-sm-1"></div>
                     </div>
                     <!-- end of second contact row -->
 
@@ -159,7 +158,7 @@
                         </div>
                         <!-- end of second form row -->
                     
-                        <div class="row mt-3">
+                        <div class="row mt-3 no-gutters">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8">
                                 <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea></textarea>
@@ -172,15 +171,15 @@
 
                     <!-- fourth contact row -->
                     <div class="row mt-3">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-10 col-sm-12 text-center">
-                            <button type="button" class="btn btn-secondary pt-2 px-3 form-btn">SEND MESSAGE</button> 
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                            <button type="button" class="btn block pt-2 px-4 form-btn">SEND MESSAGE</button> 
                             <span class="col-sm-12" id="btn-divider">or use</span>
-                            <button type="button" class="btn btn-secondary pt-2 px-3 form-btn">
+                            <button type="button" class="btn pt-2 px-4 form-btn">
                                 <i class="fab fa-facebook-messenger"></i> MESSENGER
                             </button> 
                         </div>
-                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2"></div>
                     </div>
                     <!-- end of fourth contact row -->
 
@@ -192,21 +191,22 @@
          <!-- end of main contact row -->
     
         <!-- footer --> 
-        <footer class="row d-flex justify-content-center bg-light p-3">
-            <div class="col-lg-5 col-md-5 col-sm-12" id="footer__img">
+        <footer class="row d-flex justify-content-center">
+            <span class="col-lg-5 col-md-6 col-sm-12" id="footer__img">
                 <a class="footer__link" href="#"><i class="fab fa-github"></i></a>
                 <a class="footer__link" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="footer__link" href="#"><i class="fab fa-facebook-messenger"></i></a>
                 <a class="footer__link" href="#"><i class="fab fa-google"></i></a>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 footer__text">
-                <small>Joyce Perez  &copy;  20018</small> 
-            </div>
+            </span>
+            <span class="col-lg-5 col-md-6 col-sm-12 footer__text">
+                <small class="text-light">Joyce Perez  &copy;  20018</small> 
+            </span>
         </footer>
         <!-- end of footer row-->
 
     </main>
     <!-- end of container -->
+
 
 <!-- jquery first, then popper then bootstrap js  -->
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
@@ -215,6 +215,7 @@
 
 <!-- reading position indicator credits to https://codepen.io/pankajparashar/pen/towxF -->
 <script type="text/javascript" src="assets/js/reading-position-indicator.js"></script> 
+
 </body>
 </html>
 

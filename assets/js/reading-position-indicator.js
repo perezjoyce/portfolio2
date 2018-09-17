@@ -1,3 +1,5 @@
+// **************READING POSITION INDICATOR 
+// credits to: https://codepen.io/pankajparashar/pen/towxF 
 
 $(document).ready(function(){
     
@@ -74,7 +76,7 @@ $(document).ready(function(){
 });
 
 
-// credits to: https://codepen.io/pankajparashar/pen/towxF //
+// ************** HOME ANIMATION
 
  
 
