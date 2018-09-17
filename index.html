@@ -8,7 +8,7 @@
     <title>Joyce Perez</title>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto|Itim|Freight+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto|Itim|Freight+Sans|Libre+Baskerville|Crimsom+Text" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -28,13 +28,25 @@
     <section class="container-fluid">
         <section class="row" id="home">
             <div class="col-lg-1">aa</div>
-            <div class="col-lg-10">HOME</div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="wrap">
+                   <h1 class="display-1">Hello!</h1>
+                </div>				
+            </div>
+            <div class="col-lg-1"></div>
         </section>
     </section>
     <!-- end of home -->
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!-- position indicator -->
+        <progress value="0" id="progressBar">
+            <div class="progress-container">
+                <span class="progress-bar" id="single"></span>
+            </div>
+        </progress>
+                  
         <a class="navbar-brand ml-lg-5 ml-md-3" href="#home">
             <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="website-logo" alt="personal logo">
         </a>
@@ -72,14 +84,18 @@
         <!-- about -->
         <section class="row" id="about">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">HI, I'M JOYCE</div>
+            <div class="col-lg-10">HI, I'M JOYCE
+                <p>use clip-path for image</p>
+            </div>
         </section>
         <!-- end of about row -->
 
         <!-- skills -->
         <section class="row" id="skills">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">MY SKILLS</div>
+            <div class="col-lg-10">MY SKILLS
+                <p>use animate css</p>
+            </div>
         </section>       
         <!-- end of skills row -->
 
@@ -134,10 +150,10 @@
                         <div class="form-row mt-3 no-margin-top">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">   
-                                <input type="text" class="form-control" placeholder="Phone">
+                                <input type="number" class="form-control" placeholder="Phone">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -158,10 +174,10 @@
                     <div class="row mt-3">
                         <div class="col-lg-1"></div>
                         <div class="col-lg-10 col-sm-12 text-center">
-                            <button type="button" class="btn btn-outline-primary pt-2 px-3">SEND MESSAGE</button> 
+                            <button type="button" class="btn btn-secondary pt-2 px-3 form-btn">SEND MESSAGE</button> 
                             <span class="col-sm-12" id="btn-divider">or use</span>
-                            <button type="button" class="btn btn-outline-primary pt-2 px-3">
-                                <i class="fab fa-facebook-messenger"> MESSENGER</i>
+                            <button type="button" class="btn btn-secondary pt-2 px-3 form-btn">
+                                <i class="fab fa-facebook-messenger"></i> MESSENGER
                             </button> 
                         </div>
                         <div class="col-lg-1"></div>
@@ -193,16 +209,12 @@
     <!-- end of container -->
 
 <!-- jquery first, then popper then bootstrap js  -->
-<!-- not working -->
-<!-- <script type="text/javascript" href="assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script type="text/javascript" href="assets/js/boostrap.min.js"></script> -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
-<!-- BootstrapCDN taken at https://getbootstrap.com -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+<!-- reading position indicator credits to https://codepen.io/pankajparashar/pen/towxF -->
+<script type="text/javascript" src="assets/js/reading-position-indicator.js"></script> 
 </body>
 </html>
 

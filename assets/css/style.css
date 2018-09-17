@@ -1,27 +1,21 @@
 /************* TESTING **************/
-.row, .col-lg-10, .col-lg-1 {
+.row, .col {
     border: 1px solid black;
+}
+
+.wrap {
+    border: 1px solid red;
 }
 
 /************* FONTS **************/
 
 * {
-    font-family: 'Freight+Sans', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
-.nav-item {
-    font-family: 'Freight+Sans', 'Roboto', sans-serif;
-}
-
-/************* NAVBAR **************/
-
-#website-logo {
-    width: 50px; 
-    height: 50px;
-}
-
-nav {
-    height: 10vh;
+.nav-item, h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 /************* CONTAINER **************/
@@ -35,6 +29,121 @@ nav {
     height: 100vh;
 }
 
+nav {
+    height: 10vh;
+}
+
+/************* HOME **************/
+
+/************* POSITION INDICATOR **************/
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, red);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, red);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+
+/************* NAVBAR **************/
+
+nav {
+    z-index: 1;
+    background-image: linear-gradient( rgba(255, 255, 255), rgba(0, 0, 0, .5));
+    background-color: white;
+    animation: rgb 10s infinite alternate;
+    height: 100%;
+    width: 100%;
+  }
+  
+  @keyframes rgb {
+    10% {
+      background-color: #DCDCDC;
+    }
+    20% {
+      background-color: #C0C0C0;
+    }
+    
+    30% {
+      background-color: #A9A9A9;
+    }
+    40% {
+      background-color: #808080;
+    }
+    50% {
+      background-color: #696969;
+    }
+    60% {
+      background-color: #778899;
+    }
+    70% {
+      background-color: #708090;
+    }
+    80% {
+      background-color: #2F4F4F;
+    }
+    90% {
+      background-color: #2F4F4F;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+#website-logo {
+    width: 50px; 
+    height: 50px;
+}
+
 /************* CONTACT PAGE **************/
 
 #contact {
@@ -45,15 +154,18 @@ textarea {
     width: 100%;
 }
 
+.form-btn:hover {
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    color: dimgray;
+    box-shadow: 0 0 0 3px dimgray;
+}
+
 
 /************* FOOTER **************/
 
 footer {
     margin-top: 5%;
-}
-
-footer > .col-lg-5 {
-    border: 1px solid green;
 }
 
 .footer__link {
@@ -65,7 +177,7 @@ footer > .col-lg-5 {
 @media only screen and (min-width: 961px) {
 
     .nav-item:hover {
-        border-bottom: 2px solid rgb(38, 98, 228);
+        border-bottom: 3px solid rgb(38, 98, 228);
     }
 
     #footer__img {
@@ -87,13 +199,17 @@ footer > .col-lg-5 {
     }
 
     a.nav-item:active {
-        border-bottom: 2px solid rgb(38, 98, 228);
+        border-bottom: 3px solid rgb(38, 98, 228);
     }
 
     .nav-item {
         width: 100px;
         align-self: flex-end;
         text-align: center;
+    }
+
+    #home > hex-col {
+        margin-top: 50px;
     }
 
     #contact {
@@ -120,13 +236,17 @@ footer > .col-lg-5 {
     }
 
     a.nav-item:active {
-        border-bottom: 2px solid rgb(38, 98, 228);
+        border-bottom: 3px solid rgb(38, 98, 228);
     }   
 
     .nav-item {
         width: 100px;
         align-self: flex-end;
         text-align: center;
+    }
+
+    .hide {
+        display: none!important;
     }
 
     form .col-sm-12 {
@@ -142,7 +262,8 @@ footer > .col-lg-5 {
         margin: 5px 0;
     }
 
-    #footer__img, .footer__text {
+    #footer__img, 
+    .footer__text {
         text-align: center!important;
     }
 }
