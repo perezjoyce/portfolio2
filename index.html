@@ -25,12 +25,14 @@
 <body>
 
     <!-- home -->
-    <section class="container-fluid">
-        <section class="row nested" id="home">
-            <div class="col-lg-1">aa</div>
-            <div class="col-lg-10 col-md-12 col-sm-12">			
-            </div>
+    <section class="container-fluid" id="home">
+        <section class="row nested">
             <div class="col-lg-1"></div>
+
+            <div class="col-lg-10 col-md-12 col-sm-12">	
+                
+            <div class="col-lg-1"></div>
+            </div>
         </section>
     </section>
     <!-- end of home -->
@@ -57,14 +59,14 @@
 
         <!-- collapse -->
         <div class="collapse navbar-collapse mr-lg-5 mr-md-3" id="navbar-collapse">
-            <div class="navbar-nav text-right ml-auto">
-                <a class="nav-item nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#about">ABOUT</a>
-                <a class="nav-item nav-link" href="#skills">SKILLS</a>
-                <a class="nav-item nav-link" href="#work">WORK</a>
-                <a class="nav-item nav-link" href="#contact">CONTACT</a>
+            <ul class="navbar-nav text-right ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">HOME</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 <!-- end of nav-items -->
-            </div>
+            </ul>
             <!-- end of navbar-nav -->
         </div>
          <!-- end of navbar-collapse -->
@@ -72,13 +74,6 @@
     <!-- end of nav -->
 
     <main class="container-fluid">
-
-        <!-- home -->
-        <!-- <section class="row" id="home">
-            <div class="col-lg-1">aa</div>
-            <div class="col-lg-10">HOME</div>
-        </section> -->
-        <!-- end of home row -->
 
         <!-- about -->
         <section class="row" id="about">
@@ -106,7 +101,7 @@
         <!-- end of work row -->
 
         <!-- contact -->
-        <section class="row" id="contact">
+        <section class="row my-5" id="contact">
             <div class="col-lg-1"></div>
             <div class="col-lg-10 col-md-12 col-sm-12">
                 <!-- nested elements -->
@@ -190,19 +185,22 @@
         </section>
          <!-- end of main contact row -->
     
-        <!-- footer --> 
-        <footer class="row d-flex justify-content-center">
-            <span class="col-lg-5 col-md-6 col-sm-12" id="footer__img">
-                <a class="footer__link" href="#"><i class="fab fa-github"></i></a>
-                <a class="footer__link" href="#"><i class="fab fa-linkedin"></i></a>
-                <a class="footer__link" href="#"><i class="fab fa-facebook-messenger"></i></a>
-                <a class="footer__link" href="#"><i class="fab fa-google"></i></a>
-            </span>
-            <span class="col-lg-5 col-md-6 col-sm-12 footer__text">
-                <small class="text-light">Joyce Perez  &copy;  20018</small> 
-            </span>
-        </footer>
-        <!-- end of footer row-->
+        <!-- footer -->
+        <div class="row d-flex justify-content-center" id="footer">
+            <div class="d-flex flex-column w-50">
+                <div class="d-flex flex-row justify-content-center text-light">
+                    <div class="bd-hightlight px-3"><i class="fab fa-github-alt fa-2x"></i></div> 
+                    <div class="bd-hightlight px-3"><i class="fab fa-linkedin fa-2x"></i></div>   
+                    <div class="bd-hightlight px-3"><i class="fab fa-google fa-2x"></i></div>       
+                </div>
+                <hr class="bg-light">
+                <div class="d-flex flex-row justify-content-center">
+                    <small class="text-light font-weight-light text-uppercase text-monospace">Joyce A. Perez &copy; 2018</small>
+                </div>
+            </div>
+        </div>
+        <!-- end of footer -->
+
 
     </main>
     <!-- end of container -->
