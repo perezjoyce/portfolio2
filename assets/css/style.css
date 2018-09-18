@@ -1,11 +1,11 @@
 /************* TESTING **************/
 /* .row, .col {
     border: 1px solid red;
-}  */
+}   */
 
 /* .d-flex {
     border: 1px solid red;
-} */
+}  */
 
 
 /************* FONTS **************/
@@ -25,10 +25,10 @@
 /************* CONTAINERS **************/
 
 #home {
-    height: 90vh;
+    height: 100vh;
 }
 
-#about, #skills, #projects, #reviews {
+#about, #skills, #projects, #reviews, #contact {
     height: 100vh;
     padding-top: 10vh;
 }
@@ -39,13 +39,16 @@
 
 #footer {
     height: 20vh;
-    background: #252839;
+    background: whitesmoke;
 }
 
 .navbar {
     height: 10vh;
     background: #252839;
+    border-bottom: 1px solid #c0bbb0ab ;
 }
+
+
 
 /************* LANDING PAGE **************/
 
@@ -129,14 +132,104 @@ nav a {
     border-bottom: 1px solid #f2b632;
     color: whitesmoke;
 }
+
+
+/************* ABOUT *********************/
+/* Animation */
+/* Inspired by: https://freebiesupply.com/blog/css-text-effects-from-codepen/ */
+
+#iam-1 {
+    padding-top: 5em;
+    padding-bottom: .3em;
+    font-size: 2em;
+    color: #999; 
+    text-align: center;
+    width: 100%;
+}
+
+#iam-2 {
+    font-size: 2em;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1.2em;
+    padding: 0;
+}
+
+#iam-1 p {
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#iam-2 .inner {
+    display: inline-block;
+    color: #e74c3c;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
   
-/* nav {
-    -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 73%, 0 100%);
-    clip-path: polygon(0 1%, 100% 0%, 100% 73%, 0 100%);
-} */
+    /*animation*/
+                                /* -webkit-animation:move 5s;
+                                -moz-animation:move 5s;
+                                -ms-animation:move 5s;
+                                -o-animation:move 5s; */
+    animation:move 5s;
 
+    /*animation-iteration-count*/
+                                /* -webkit-animation-iteration-count:infinite;
+                                -moz-animation-iteration-count:infinite;
+                                -ms-animation-iteration-count:infinite;
+                                -o-animation-iteration-count:infinite; */
+    animation-iteration-count:infinite;
 
+    /*animation-delay*/
+                                /* -webkit-animation-delay:2s;
+                                -moz-animation-delay:2s;
+                                -ms-animation-delay:2s;
+                                -o-animation-delay:2s; */
+    animation-delay:1s;
+}
+
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+    100% {top: -250px; }
+}
+  
+                                /* @-webkit-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                }
+
+                                @-moz-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                }
+
+                                @-o-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                } */
 /************* CONTACT PAGE **************/
+/* clip path tool: https://bennettfeely.com/clippy/ */
+#contact {
+    background-color: #252934;
+    -webkit-clip-path: polygon(1% 1%, 1% 98%, 99% 98%, 99% 1%, 50% 11%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 10%);
+}
 
 textarea {
     width: 100%;
@@ -144,26 +237,26 @@ textarea {
 }
 
 .form-btn {
-    background: #f2b632;
-    color:#677077;
+    background: #f2b632
 }
 
 .form-btn:hover {
-    color: whitesmoke;
     box-shadow: none!important;
     -ms-transform: scale(1,1); /* IE 9 */
     -webkit-transform: scale(1,1); /* Safari */
     transform: scale(1.1,1.1); /* Standard syntax */
 }
 
-input.form-control:focus {
-    border-color: #DCDCDC;
-    box-shadow: 0 0 .5em rgba(255,215,.4);
+.form-control, textarea {
+    border-radius: 0!important;
+    border: 0 solid transparent;
+    background: #e8edf3;
 }
 
-textarea.form-control:focus {
-    border-color: #DCDCDC;
-    box-shadow: 0 0 .5em rgba(255,215,.6);
+.form-control:focus, .form-control:active, textarea:focus, textarea:active {
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background-color: whitesmoke;
 }
 
 /************* FOOTER **************/
@@ -177,9 +270,13 @@ textarea.form-control:focus {
     margin-top: 5vh;
 }
 
-#footer hr {
-    border-color: #FFCA3A;
+#footer small {
+    margin-top: 1vh;
 }
+
+/* #footer hr {
+    border-color: #FFCA3A;
+} */
 
 /* footer {
     margin-top: 3em;
@@ -187,18 +284,38 @@ textarea.form-control:focus {
     clip-path: polygon(0 27%, 100% 0%, 100% 100%, 0% 100%);
 } */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************* DESKTOP **************/
 
 @media only screen and (min-width: 961px) {
 
-    .nav-link:hover {
+    .nav-link:active, .nav-link:focus, .nav-link:visited, .nav-link:hover {   
         border-bottom: 1px solid #f2b632;
         color: whitesmoke;
     }
 
-    .fal fa-chevron-double-down {
-        display: none;
-    }
    
 }
 
@@ -214,11 +331,10 @@ textarea.form-control:focus {
     /* since hover does not apply */
     .nav-link:focus {   
         border-bottom: 1px solid #f2b632;
-        color: whitesmoke;
+        color: whitesmoke!important;
     }
 
     .form-btn:focus {
-        color: whitesmoke;
         box-shadow: none!important;
         -ms-transform: scale(1,1); /* IE 9 */
         -webkit-transform: scale(1,1); /* Safari */
@@ -229,10 +345,13 @@ textarea.form-control:focus {
         color: #f2b632;
     }
 
-    /* nav toggler */
-    .fal fa-chevron-double-down {
-        display: none;
+    .nav-link:active, .nav-link:focus, .nav-link:visited { 
+        border-bottom: 1px solid #f2b632;
+        color: whitesmoke!important;
     }
+
+
+
 
 }
 
@@ -240,7 +359,13 @@ textarea.form-control:focus {
 
 @media only screen and (max-width:425px) {
 
+    /* for sides of containers to be removed */
+    section > .col-lg-1 {
+        display: none!important;
+    } 
+
     /* for navigation to be accessible */
+    
     .navbar-nav {
         text-align: center;
     }
@@ -248,23 +373,15 @@ textarea.form-control:focus {
     .navbar-collapse {
         background-color: #252839;
         color: whitesmoke;
+        width: 100vh;
+        margin-left: 0!important;
+        margin-right: 0!important;
     }
 
     button img {
         height: 30px;
         width: 30px;
     }
-
-    .navbar-collapse {
-        width: 100vh;
-        margin-left: 0!important;
-        margin-right: 0!important;
-    }
-
-    /* for sides of containers to be removed */
-    section > .col-lg-1 {
-        display: none!important;
-    } 
 
     /* for form input and buttons to be adjusted */
     form .col-sm-12 {
@@ -284,21 +401,6 @@ textarea.form-control:focus {
         margin-top: 1em;
     }
 
-
-    /* since hover does not apply */
-
-    .form-btn:focus {
-        color: whitesmoke;
-        box-shadow: none!important;
-        -ms-transform: scale(1,1); /* IE 9 */
-        -webkit-transform: scale(1,1); /* Safari */
-        transform: scale(1.1,1.1); /* Standard syntax */
-    }
-
-    #footer .fab:focus {
-        color: #f2b632;
-    }
-
     /* so name and copyright will fit */
     #footer small {
         word-spacing: none;   
@@ -308,10 +410,30 @@ textarea.form-control:focus {
         display: none!important;
     }
 
-     /* doesn't work; overriden by nav-dark*/
-     .nav-link:focus {
-        counter-reset: inherit;
-        border-bottom: 1px solid #f2b632!important;
+
+    /* since hover does not apply */
+
+    .form-btn:focus {
+        box-shadow: none!important;
+        -ms-transform: scale(1,1); /* IE 9 */
+        -webkit-transform: scale(1,1); /* Safari */
+        transform: scale(1.1,1.1); /* Standard syntax */
     }
+
+    #footer .fab:focus {
+        color: #f2b632;
+    }
+    
+     /* doesn't work; overriden by nav-dark*/
+    
+     .nav-link:active, .nav-link:focus, .nav-link:visited { 
+        text-decoration-line: underline;
+        text-decoration-color: #f2b632;
+        color:  whitesmoke!important;
+        border-bottom: transparent;
+    }
+    
 }
+
+
 
