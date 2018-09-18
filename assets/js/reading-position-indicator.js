@@ -13,23 +13,23 @@ $(document).ready(function(){
     
     if('max' in document.createElement('progress')){
         // Browser supports progress element
-        var progressBar = $('progress');
+        var progressbar = $('progress');
         
         // Set the Max attr for the first time
-        progressBar.attr({ max: getMax() });
+        progressbar.attr({ max: getMax() });
 
         $(document).on('scroll', function(){
             // On scroll only Value attr needs to be calculated
-            progressBar.attr({ value: getValue() });
+            progressbar.attr({ value: getValue() });
         });
       
         $(window).resize(function(){
             // On resize, both Max/Value attr needs to be calculated
-            progressBar.attr({ max: getMax(), value: getValue() });
+            progressbar.attr({ max: getMax(), value: getValue() });
         });   
     }
     else {
-        var progressBar = $('.progress-bar'), 
+        var progressbar = $('.progress-bar'), 
             max = getMax(), 
             value, width;
         
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
         
         var setWidth = function(){
-            progressBar.css({ width: getWidth() });
+            progressbar.css({ width: getWidth() });
         }
         
         $(document).on('scroll', setWidth);
@@ -57,10 +57,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   
   $('#single').addClass("active");
-  $('#progressBar').addClass('single');
+  $('#progressbar').addClass('single');
     
   $('#single').on('click', function(){
-    $('#progressBar').removeClass().addClass('single');
+    $('#progressbar').removeClass().addClass('single');
     $('a').removeClass();
     $(this).addClass('active');
     $(this).preventDefault();
@@ -68,8 +68,8 @@ $(document).ready(function(){
 
   $(document).on('scroll', function(){
 
-      maxAttr = $('#progressBar').attr('max');
-      valueAttr = $('#progressBar').attr('value');
+      maxAttr = $('#progressbar').attr('max');
+      valueAttr = $('#progressbar').attr('value');
       percentage = (valueAttr/maxAttr) * 100;    
   });
   

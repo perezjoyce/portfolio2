@@ -26,7 +26,7 @@
 
     <!-- home -->
     <section class="container-fluid" id="home">
-        <section class="row nested">
+        <section class="row">
             <div class="col-lg-1"></div>
 
             <div class="col-lg-10 col-md-12 col-sm-12">	
@@ -38,12 +38,12 @@
     <!-- end of home -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toogleable-sm sticky-top">
 
         <!-- position indicator -->
-        <progress value="0" id="progressBar">
+        <progress value="0" id="progressbar">
             <div class="progress-container">
-                <span class="progress-bar" id="single"></span>
+                <span class="bar" id="single"></span>
             </div>
         </progress>
       
@@ -53,17 +53,17 @@
         </a>
         
         <!-- toggler -->
-        <button class="navbar-toggler mr-lg-5 mr-md-3" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"><img src="assets/images/down2.png"></span>
         </button>
 
         <!-- collapse -->
         <div class="collapse navbar-collapse mr-lg-5 mr-md-3" id="navbar-collapse">
-            <ul class="navbar-nav text-right ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">HOME</span></a></li>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">REVIEWS</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 <!-- end of nav-items -->
             </ul>
@@ -84,28 +84,58 @@
         </section>
         <!-- end of about row -->
 
+
+
+
+
+         <!-- skills -->
+         <section class="row" id="skills">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    MY SKILLS
+                    <p>use animate css</p>
+                </div>
+            </section>       
+            <!-- end of skills row -->
+
+
+
+
+
         <!-- skills -->
-        <section class="row" id="skills">
+        <section class="row" id="projects">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">MY SKILLS
-                <p>use animate css</p>
+            <div class="col-lg-10">
+                PROJECTS
             </div>
         </section>       
         <!-- end of skills row -->
 
+
+
+
+
         <!-- work -->
-        <section class="row" id="work">
+        <section class="row" id="reviews">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">REVIEW MY WORK</div>
+            <div class="col-lg-10">
+
+            </div>
+            <div class="col-lg-1"></div>
         </section>
         <!-- end of work row -->
+
+
+
+
 
         <!-- contact -->
         <section class="row my-5" id="contact">
             <div class="col-lg-1"></div>
             <div class="col-lg-10 col-md-12 col-sm-12">
+
                 <!-- nested elements -->
-                <div class="container-fluid nested">
+                <div class="container-fluid">
 
                      <!-- first contact row -->
                     <div class="row">
@@ -126,8 +156,7 @@
                         <div class="col-lg- col-md-2 col-sm-1"></div>
                     </div>
                     <!-- end of second contact row -->
-
-                    
+          
                     <form>
                         <div class="form-row mt-3 no-margin-top" id="contact__name">
                             <div class="col-lg-2"></div>
@@ -185,6 +214,11 @@
         </section>
          <!-- end of main contact row -->
     
+
+
+
+
+
         <!-- footer -->
         <div class="row d-flex justify-content-center" id="footer">
             <div class="d-flex flex-column w-50">
@@ -195,15 +229,22 @@
                 </div>
                 <hr class="bg-light">
                 <div class="d-flex flex-row justify-content-center">
-                    <small class="text-light font-weight-light text-uppercase text-monospace">Joyce A. Perez &copy; 2018</small>
+                    <small class="text-light font-weight-light text-uppercase text-monospace">Joyce <span>A.</span> Perez &copy; 2018</small>
                 </div>
             </div>
         </div>
         <!-- end of footer -->
 
 
+
+
+
     </main>
     <!-- end of container -->
+
+
+
+
 
 
 <!-- jquery first, then popper then bootstrap js  -->
