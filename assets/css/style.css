@@ -502,7 +502,10 @@ textarea {
         color: whitesmoke;
     }
 
-    
+    #skills {
+        padding: 3em 1em 5em 1em;
+    }
+
 
    
 }
