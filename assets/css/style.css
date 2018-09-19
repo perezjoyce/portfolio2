@@ -17,8 +17,8 @@
     box-sizing: border-box;
 }
 
-.nav-item, h1 {
-    font-family: 'Montserrat', sans-serif;
+.nav-item, h1, h2 {
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
 }
 
@@ -28,18 +28,26 @@
     height: 100vh;
 }
 
-#about, #skills, #projects, #reviews, #contact {
+#about, #skills, #projects, #reviews {
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 20vh;
+}
+
+#skills {
+    background-color: whitesmoke;        
+    -webkit-clip-path: polygon(100% 15%, 100% 100%, 50% 88%, 0% 100%, 0 14%, 51% 0);
+    clip-path: polygon(100% 15%, 100% 100%, 50% 88%, 0% 100%, 0 15%, 50% 0);
 }
 
 #contact {
     height: fit-content!important;
+    padding-top: 10vh;
 }
 
 #footer {
-    height: 20vh;
+    height: 10vh;
     background: whitesmoke;
+    border-top: 1px solid #c0bbb0ab 
 }
 
 .navbar {
@@ -54,61 +62,62 @@
 
 
 /************* POSITION INDICATOR **************/
+/* Credits to https://codepen.io/pankajparashar/pen/towxF */
 
 progress {
-  /* Positioning */
-  position: absolute;
-  left: 0;
-  top: 0;
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    top: 0;
 
-  /* Dimensions */
-  width: 100%;
-  height: 0.4em;
+    /* Dimensions */
+    width: 100%;
+    height: 0.4em;
 
-  /* Reset the apperance */  
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+    /* Reset the apperance */  
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
 
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
 
-  /* For Firefox/IE10+ */
-  background-color: transparent;
+    /* For Firefox/IE10+ */
+    background-color: transparent;
 
-  /* For IE10+, color of the progress bar */
-  color: rgba(242,182,50,0.836);
+    /* For IE10+, color of the progress bar */
+    color: rgba(242,182,50,0.836);
 }
 
 progress::-webkit-progress-bar {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .single::-webkit-progress-value {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(left, transparent, #f2b632);
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(left, transparent, #f2b632); 
 }
 
 .single::-moz-progress-bar {
-  background-color: transparent;
-  background-image: -moz-linear-gradient(left, transparent, #f2b632);
+    background-color: transparent;
+    background-image: -moz-linear-gradient(left, transparent, #f2b632);
 }
 
 .progress-container {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: .4em;
-  display: block;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: .4em;
+    display: block;
 }
 
 .bar {
-  background-color: #f2b632;
-  width: 50%;
-  display: block;
-  height: inherit;
+    background-color: #f2b632;
+    width: 50%;
+    display: block;
+    height: inherit;
 }
 
 progress {
@@ -223,17 +232,154 @@ nav a {
                                     60% { top: -150px; }
                                     80% { top: -200px; }
                                 } */
+
+
+
+/************** SKILLS *******************/
+/* Inspired by: https://codepen.io/Balsakup/pen/QKPPZO */
+.credits {
+    font-size: 10px;
+}
+
+.skill-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+                                                     /* -webkit-transform: translateY(-50%) translateX(-50%); */
+    transform: translateY(-50%) translateX(-50%);
+    padding: 20px;
+    width: 30vh;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: whitesmoke;
+}
+
+.skill-card:hover .skill-card__header {
+    height: 2.5em;
+}
+
+.skill-card:hover .skill-card__header .skill-card__icon {
+                                                        /* -webkit-transform: translateX(-50%) translateY(-50%) scale(3); */
+    transform: translateX(-50%) translateY(-50%) scale(3);
+}
+
+.skill-card:hover .skill-card__body {
+    height: 170px;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li {
+                                                         /* -webkit-transform: translateX(0); */
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+    transition-duration: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
+    transition-delay: 0.25s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
+    transition-delay: 0.75s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
+    transition-delay: 1s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
+    transition-delay: 1.25s;
+}
+
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+    transition-delay: 1.5s;
+}
+
+.skill-card img {
+    width: 100%;
+}
+
+.skill-card .skill-card__header {
+    position: relative;
+    background-color: #e8edf3;
+    height: 170px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.skill-card .skill-card__header .skill-card__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+                                                /* -webkit-transform: translateY(-50%) translateX(-50%); */
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    width: 128px;
+    height: 128px;
+                                                /* transition: -webkit-transform 0.5s; */
+    transition: transform 0.5s;
+                                                /* transition: transform 0.5s, -webkit-transform 0.5s; */
+}
+
+.skill-card .skill-card__title {
+    text-align: center;
+    padding-top: 2.5%;
+    color: #393D3F;
+}
+
+.skill-card .skill-card__body {
+    height: 40px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.skill-card .skill-card__body .skill-card__title {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-card .skill-card__body .skill-card__knowledge {
+    text-align: center;
+    margin-top: 10%;
+    color: #393D3F;
+}
+
+.skill-card .skill-card__body .skill-card__knowledge li {
+    margin-top: 5px;
+    list-style-type: none;
+    transition-duration: 0;
+    transition-delay: 0.5s;
+                                                    /* -webkit-transform: translateX(-100%); */
+    transform: translateX(-100%);
+}
+  
+
 /************* CONTACT PAGE **************/
 /* clip path tool: https://bennettfeely.com/clippy/ */
 #contact {
     background-color: #252934;
-    -webkit-clip-path: polygon(1% 1%, 1% 98%, 99% 98%, 99% 1%, 50% 11%);
-    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 10%);
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
 }
 
 textarea {
     width: 100%;
     padding-left: 0;
+}
+
+.form-control, textarea {
+    border-radius: 0!important;
+    border: 0 solid transparent;
+    background: #e8edf3;
 }
 
 .form-btn {
@@ -247,12 +393,6 @@ textarea {
     transform: scale(1.1,1.1); /* Standard syntax */
 }
 
-.form-control, textarea {
-    border-radius: 0!important;
-    border: 0 solid transparent;
-    background: #e8edf3;
-}
-
 .form-control:focus, .form-control:active, textarea:focus, textarea:active {
     border-radius: 0!important;
     box-shadow: none!important;
@@ -262,16 +402,22 @@ textarea {
 /************* FOOTER **************/
 
 
+#footer i {
+    padding: .4em;
+    border: .5px solid #252934;
+    border-radius: 50%;
+}
+
 #footer .fab:hover {
     color: #FFCA3A;
 }
 
 #footer .flex-row:first-child {
-    margin-top: 5vh;
+    margin-top: 1.5vh;
 }
 
 #footer small {
-    margin-top: 1vh;
+    margin-top: .8vh;
 }
 
 /* #footer hr {
@@ -328,6 +474,11 @@ textarea {
         display: none!important;
     }
 
+    /* skill card spacing */
+    .margin-top {
+        margin-top: 1em;
+    }
+
     /* since hover does not apply */
     .nav-link:focus {   
         border-bottom: 1px solid #f2b632;
@@ -354,6 +505,14 @@ textarea {
 
 
 }
+
+
+
+
+
+
+
+
 
 /************* MOBILE **************/
 
@@ -383,6 +542,31 @@ textarea {
         width: 30px;
     }
 
+    /* skill card container */
+
+    #skills {
+        height: fit-content!important;
+        -webkit-clip-path: polygon(100% 15%, 100% 100%, 50% 88%, 0% 100%, 0 14%, 51% 0);
+        clip-path: polygon(100% 10%, 100% 100%, 50% 95%, 0% 100%, 0 10%, 50% 0);
+    }
+
+    #skills .container {
+        padding-bottom: 5em;
+    }
+
+    /* skill card spacing */
+    .margin-top {
+        margin-top: 1em;
+    }
+
+    /* clip path */
+
+    #contact {
+        background-color: #252934;
+        -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 10%);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 10%);
+    }
+
     /* for form input and buttons to be adjusted */
     form .col-sm-12 {
         margin-top: 20px;
@@ -409,6 +593,8 @@ textarea {
     #footer span {
         display: none!important;
     }
+
+    
 
 
     /* since hover does not apply */
