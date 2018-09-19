@@ -22,6 +22,7 @@
     <!-- external css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- home -->
@@ -30,28 +31,38 @@
     </section>
     <!-- end of home -->
 
+
+
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toogleable-sm sticky-top">
 
         <!-- position indicator -->
         <progress value="0" id="progressbar">
-            <div class="progress-container">
+            <div class="progress__container">
                 <span class="bar" id="single"></span>
             </div>
         </progress>
+
+
       
         <!-- logo -->
         <a class="navbar-brand ml-lg-5 ml-md-3" href="#home">
-            <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="website-logo" alt="personal logo">
+            <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="navbar__logo" alt="personal logo">
         </a>
+
+
         
         <!-- toggler -->
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbar--collapse" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="my-1 mx-2 close font-weight-light">X</span>
             <span class="navbar-toggler-icon"><img src="assets/images/down2.png"></span>
         </button>
 
+
+
         <!-- collapse -->
-        <div class="collapse navbar-collapse mr-lg-5 mr-md-3 mx-auto;" id="navbar-collapse">
+        <div class="collapse navbar-collapse mr-lg-5 mr-md-3 mx-auto;" id="navbar--collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#about">ABOUT</a></li>
                 <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#skills">SKILLS</a></li>
@@ -62,43 +73,72 @@
             </ul>
             <!-- end of navbar-nav -->
         </div>
-         <!-- end of navbar-collapse -->
+         <!-- end of navbar--collapse -->
     </nav>
     <!-- end of nav -->
 
+
+
+
     <main class="container-fluid">
-
-        <!-- about -->
-        <!-- use clip path for image -->
-        <section class="container-fluid" id="about">
-            <div class="d-flex flex-row justify-content-center" id="iam-1">	
-                <p class="text-center text-uppercase">Joyce Perez&nbsp;</p>
-            </div>
-            <div class="d-flex flex-row justify-content-center" id="iam-2">
-                <span class="inner text-center">
-                    <br>Curricularist
-                    <br>Instructional Designer
-                    <br>Web Developer
-                    <br>Lover
-                </span> 
-            </div>
-        </section>
-        <!-- end of about row -->
+        
 
 
-
-
-
-         <!-- skills -->
-         <section class="row" id="skills">
-            <div class="col-lg">
             
-                <!-- nested -->
-                <div class="container">
+
+
+    <!-- ABOUT -->
+        <!-- use clip path for image -->
+        <section class="row" id="about">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">   
+                
+                
+                <!-- NESTED ABOUT -->
+                <div class="container-fluid">
+                    <div class="d-flex flex-row justify-content-center" id="iam-1">	
+                        <p class="text-center text-uppercase">Joyce Perez&nbsp;</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center" id="iam-2">
+                        <span class="inner text-center">
+                            <br>Curricularist
+                            <br>Instructional Designer
+                            <br>Web Developer
+                            <br>Lover
+                        </span> 
+                    </div>
+                </div>
+                <!-- end of nested about container-->
+            </div>
+            <!-- end of about container col -->
+
+
+            <div class="col-lg-1"></div>
+            <!-- end of about right margin -->
+        </section>
+        <!-- end of about main row -->
+
+
+
+
+
+
+
+    <!-- SKILLS -->
+        <section class="row" id="skills">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">   
+
+           
+                <!-- NESTED SKILLS -->
+                <div class="container-fluid">
+
                     <div class="row justify-content-center">
                         <h1 class="display-6 font-weight-light">Skills</h1>
                     </div>
+
                     <div class="row mt-5">
+
 
                         <div class="col-lg-4 col-md-4 col-sm-12 margin-top">
                             <div class="skill-card">
@@ -115,7 +155,8 @@
                                 </section>
                             </div>
                         </div>
-                            <!-- end of skill-card 1 -->
+                            <!-- end of skill-card 1 col -->
+
 
                         <div class="col-lg-4 col-md-4 col-sm-12 margin-top">
                             <div class="skill-card">
@@ -131,7 +172,8 @@
                                 </section>
                             </div>
                         </div>
-                        <!-- end of skill-card 2 -->
+                        <!-- end of skill-card 2 col -->
+
 
                         <div class="col-lg-4 col-md-4 col-sm-12 margin-top">
                             <div class="skill-card">
@@ -147,101 +189,150 @@
                                 </section>
                             </div>
                         </div>
-                             <!-- end of skill-card 3-->
+                        <!-- end of skill-card 3 col-->
+
+
                     </div>
-                    <!-- end of nested row -->
-
+                    <!-- end of skills nested row -->
                 </div>
-                <!-- end of nested container -->
+                <!-- end of skills nested container -->
+            </div>
+            <!-- end of skills main col -->
 
-             </div>
-             <!-- end of nested col -->
-         </section>
-                    
-            <!-- end of skills row -->
+            <div class="col-lg-1"></div>
+            <!-- skills right margin -->
+        </section>
+        <!-- send of skills main row -->
+
+                     
 
 
 
-
-
-        <!-- projects -->
+    <!-- PROJECTS -->
         <section class="row" id="projects">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">
-                PROJECTS
-            </div>
-        </section>       
-        <!-- end of skills row -->
+            <div class="col-lg-10">   
 
-
-
-
-
-        <!-- reviews -->
-        <section class="row" id="reviews">
-            <div class="col-lg-2 col-md-1"></div>
-            <div class="col-lg-8 col-md-10 col-sm-12 font-weight-light">
-
-                <div class="d-flex justify-content-center">
-                    <h1 class="display-6 font-weight-light">Reviews</h1>
-                </div>
-
-                <blockquote class="blockquote text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
-                    <footer class="font-weight-normal mt-5"><span>Lorem ipsum dolor</span><span class="hide">,</span>
-                            <a href="#">Lorem ipusum</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-                <!-- end of first blockquote -->
-
-                <blockquote class="blockquote text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
-                    <footer class="font-weight-normal mt-5"><span>Lorem ipsum dolor</span><span class="hide">,</span>
-                            <a href="#">Lorem ipusum</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-                <!-- end of 2nd blockquote -->
-
-                <blockquote class="blockquote text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
-                    <footer class="font-weight-normal mt-5"><span>Lorem ipsum dolor</span><span class="hide">,</span>
-                            <a href="#">Lorem ipusum</a>
-                        </cite>
-                    </footer>
-                </blockquote>
-                <!-- end of 3rd blockquote -->
-
-
-            </div>
-            <div class="col-lg-2 col-md-1"></div>
-        </section>
-        <!-- end of work row -->
-
-
-
-
-
-        <!-- contact -->
-        <section class="row" id="contact">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10 col-md-12 col-sm-12">
-
-                <!-- nested -->
+                <!-- NESTED PROJECTS -->
                 <div class="container-fluid">
 
-                     <!-- first contact row -->
+                    <div class="row justify-content-center">
+                        <h1 class="display-6 font-weight-light">PROJECTS</h1>
+                    </div>
+
+                    <div class="row mt-5">
+                        
+                    </div>       
+                    <!-- end of nested projects row -->
+                </div>
+                <!-- end of nested projects container -->
+
+
+            </div>
+            <!-- end of projects main col -->
+            <div class="col-lg-1"></div>
+            <!-- projects right margin -->
+        </section>
+        <!-- end of projects main row -->
+
+
+
+
+
+
+        <!-- REVIEWS -->
+        <section class="row" id="reviews">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">   
+
+
+
+                <!-- NESTED REVIEWS -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <h1 class="display-6 font-weight-light">REVIEWS</h1>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col font-weight-light">
+
+                            <blockquote class="blockquote text-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
+                                <footer class="font-weight-normal mt-5">
+                                    <span>Lorem ipsum dolor</span>
+                                    <span class="hide">,</span>
+                                    <a href="#">Lorem ipusum</a>
+                                </footer>
+                            </blockquote>
+                            <!-- end of first blockquote -->
+
+
+                            <blockquote class="blockquote text-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
+                                <footer class="font-weight-normal mt-5">
+                                    <span>Lorem ipsum dolor</span>
+                                    <span class="hide">,</span>
+                                    <a href="#">Lorem ipusum</a>
+                                </footer>
+                            </blockquote>
+                            <!-- end of 2nd blockquote -->
+
+
+                            <blockquote class="blockquote text-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe exercitationem, voluptates recusandae sunt quidem. Aspernatur iste optio cum voluptates?</p>
+                                <footer class="font-weight-normal mt-5">
+                                    <span>Lorem ipsum dolor</span>
+                                    <span class="hide">,</span>
+                                    <a href="#">Lorem ipusum</a>
+                                </footer>
+                            </blockquote>
+                            <!-- end of 3rd blockquote -->
+
+
+                        </div>
+                        <!-- end of nested col for reviews -->
+                    </div>
+                    <!-- end of nested row for reviews -->
+                </div>
+                <!-- end of nested reviews container -->
+
+
+            </div>
+            <!-- end of reviews main col -->
+
+
+            <div class="col-lg-1"></div>
+            <!-- reviews right margin -->
+
+        </section>
+        <!-- end of reviews main container-->
+
+
+
+
+
+
+
+    <!-- CONTACT -->
+        <section class="row" id="contact">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+
+
+                <!-- NESTED CONTACT -->
+                <div class="container-fluid">
+
                     <div class="row">
                         <div class="col-lg-3"></div>
-                        <div class="col-lg-6 text-center text-light pt-5">
+                        <div class="col-lg-6 text-center text-light">
                             <h1 class="display-6 font-weight-light">Contact</h1>
                         </div>
                         <div class="col-lg-3"></div>
                     </div>
                     <!-- end of first contact row -->
 
-                    <!-- second contact row -->
+
+                    
                     <div class="row mt-3" id="contact__sub-header">
                         <div class="col-lg-2 col-md-2 col-sm-1"></div>
                         <div class="col-lg-8 col-md-8 col-sm-10 text-center text-light font-weight-light">
@@ -250,15 +341,17 @@
                         <div class="col-lg- col-md-2 col-sm-1"></div>
                     </div>
                     <!-- end of second contact row -->
-          
+        
+
                     <form>
+
                         <div class="form-row mt-3 no-margin-top" id="contact__name">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
                                 <input type="text" class="form-control" placeholder="First name">
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                                <input type="text" class="form-control" placeholder="Last name" id="last-name"">
+                                <input type="text" class="form-control" placeholder="Last name" id="last-name">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -276,66 +369,82 @@
                         </div>
                         <!-- end of second form row -->
                     
+                        
                         <div class="row mt-3 no-gutters">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8">
-                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message"></textarea></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="8" placeholder="Your Message"></textarea></textarea>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
                         <!-- end of third form row -->
+
                     </form>
                     <!-- end of third contact row -->
 
-                    <!-- fourth contact row -->
-                    <div class="row mt-3">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8 col-md-12 col-sm-12 text-center pb-5">
+
+
+                    
+                    <div class="row mt-5">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10 col-md-12 col-sm-12 text-center">
                             <button type="button" class="btn block pt-2 px-4 form-btn text-light font-weight-light">SEND MESSAGE</button> 
                             <span class="col-sm-12 text-light font-weight-light" id="btn-divider">or use</span>
                             <button type="button" class="btn pt-2 px-4 form-btn text-light font-weight-light">
                                 <i class="fab fa-facebook-messenger"></i> MESSENGER
                             </button> 
                         </div>
-                        <div class="col-lg-2"></div>
+                        <div class="col-lg-1"></div>
                     </div>
                     <!-- end of fourth contact row -->
 
+
+
                 </div>
-                <!-- end of nested -->
+                <!-- end of nested contact container -->
+
+
             </div>
-            <!-- end of col for nested -->
+            <!-- end of contact main col -->
+            <div class="col-lg-1"></div>
+            <!-- contact right margin -->
+
         </section>
-         <!-- end of main contact row -->
-    
+        <!-- end of contact main container-->
 
 
 
 
 
-        <!-- footer -->
+
+
+    <!-- footer -->
         <div class="row d-flex justify-content-center" id="footer">
+
             <div class="d-flex flex-column">
+
                 <div class="d-flex flex-row justify-content-center">
                     <div class="px-3"><i class="fab fa-github-alt"></i></div> 
                     <div class="px-3"><i class="fab fa-linkedin"></i></div>   
                     <div class="px-3"><i class="fab fa-google"></i></div>       
                 </div>
-                <!-- <hr class="bg-light"> -->
+
                 <div class="d-flex flex-row justify-content-center">
                     <small class="text-dark font-weight-light text-uppercase text-monospace">Joyce <span class="hide">A.</span> Perez &copy; 2018</small>
                 </div>
+
             </div>
+            <!-- end of main footer col -->
         </div>
-        <!-- end of footer -->
+        <!-- end of main footer container -->
 
 
 
+            
 
 
     </main>
-    <!-- end of container -->
-
+    <!-- end of main -->
 
 
 
@@ -345,6 +454,8 @@
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+
 
 <!-- reading position indicator credits to https://codepen.io/pankajparashar/pen/towxF -->
 <script type="text/javascript" src="assets/js/reading-position-indicator.js"></script> 
