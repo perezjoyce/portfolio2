@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+blockquote {
+    font-size: 14px;
+}
+
 .nav-item, h1, h2 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -28,15 +32,24 @@
     height: 100vh;
 }
 
-#about, #skills, #projects, #reviews {
+#about, #skills, #projects {
     height: 100vh;
     padding-top: 20vh;
+}
+
+#reviews {
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 100% 8%, 100% 91%, 50% 100%, 0 90%, 0 8%);
+    clip-path: polygon(50% 0%, 100% 8%, 100% 91%, 50% 100%, 0 90%, 0 8%);
+    height: fit-content!important;
+    padding: 5em;
 }
 
 #skills {
     background-color: whitesmoke;        
     -webkit-clip-path: polygon(100% 15%, 100% 100%, 50% 88%, 0% 100%, 0 14%, 51% 0);
     clip-path: polygon(100% 15%, 100% 100%, 50% 88%, 0% 100%, 0 15%, 50% 0);
+    padding: 5em;
 }
 
 #contact {
@@ -237,6 +250,8 @@ nav a {
 
 /************** SKILLS *******************/
 /* Inspired by: https://codepen.io/Balsakup/pen/QKPPZO */
+/*Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+
 .credits {
     font-size: 10px;
 }
@@ -361,8 +376,50 @@ nav a {
                                                     /* -webkit-transform: translateX(-100%); */
     transform: translateX(-100%);
 }
-  
 
+
+/************* REVIEW  *******************/
+
+blockquote {
+    margin-top: 1em;
+    background-color: #f9f9f9;
+    padding: 2em;
+    color: #393D3F;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+}
+blockquote > p {
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+}
+
+blockquote footer {
+    text-align: right;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+}
+
+blockquote a {
+    color:#f2b632;
+    font-size: 1em;
+}
+
+blockquote a:hover {
+    color: #f4aa07;
+    text-decoration: none;
+}
+
+blockquote p::before {
+    position: relative;
+    content: "\201C";
+    display: block;
+    width: 1005;
+    text-align: center;
+    line-height: .8;
+    font-size: 5em;
+    font-family: 'Roboto';
+    color: #f4aa07;
+
+}
 /************* CONTACT PAGE **************/
 /* clip path tool: https://bennettfeely.com/clippy/ */
 #contact {
@@ -462,6 +519,8 @@ textarea {
         color: whitesmoke;
     }
 
+    
+
    
 }
 
@@ -550,13 +609,27 @@ textarea {
         clip-path: polygon(100% 10%, 100% 100%, 50% 95%, 0% 100%, 0 10%, 50% 0);
     }
 
-    #skills .container {
-        padding-bottom: 5em;
-    }
-
     /* skill card spacing */
     .margin-top {
         margin-top: 1em;
+    }
+
+    /* spacing of footer at review */
+    blockquote footer span, blockquote footer a {
+        display: block;
+        text-align: center;
+    }
+
+    blockquote .hide {
+        display: none!important;
+    }
+
+    /* footer container */
+    blockquote {
+        margin-top: 1em;
+        background-color: #f9f9f9;
+        padding: .5em;
+        color: #393D3F;
     }
 
     /* clip path */
@@ -590,7 +663,7 @@ textarea {
         word-spacing: none;   
     }
 
-    #footer span {
+    #footer .hide {
         display: none!important;
     }
 
