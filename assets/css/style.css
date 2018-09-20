@@ -44,14 +44,16 @@
 }
 
 #projects {
-    background-color: antiquewhite;
+    background-color: rgba(220,220,220,.6);
+    border-top: 1px single lightgray;
+    border-bottom: 1px single lightgray;
     height: 100%;
     padding: 8em 1em 5em 1em;
 }
 
 #reviews {
-    height: fit-content;
-    padding: 10vh 10vh 0 10vh;
+    height: 100%;
+    padding: 8em 6em 1em 6em;
 }
     
 
@@ -136,9 +138,6 @@ progress::-webkit-progress-bar {
 progress {
     background: #252839;
 }
-
-
-
 
 
 /************* NAVBAR **************/
@@ -400,6 +399,18 @@ nav a {
     transition-duration: 1s;
     border: 2px solid  #f2b632;
 }
+
+
+
+
+
+
+/* ********** PROJECTS ******************/
+/* Inspired by https://codepen.io/anon/pen/ZMwPbP */
+
+
+
+
 
 
 /************* REVIEW  *******************/
