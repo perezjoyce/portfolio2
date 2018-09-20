@@ -38,18 +38,25 @@
     background-color: whitesmoke;        
 }
 
-#about, #contact, #skills, #projects {
+#about, #skills {
     height: fit-content!important;
     padding: 20vh 10vh;
 }
 
+#projects {
+    background-color: antiquewhite;
+    height: 100%;
+    padding: 8em 1em 5em 1em;
+}
+
 #reviews {
     height: fit-content;
-    padding: 20vh;
+    padding: 10vh 10vh 0 10vh;
 }
     
 
 #contact {
+    padding: 20vh 10vh 10vh 10vh;
     background-color: #252934;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
     clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
@@ -57,7 +64,7 @@
 
 #footer {
     background: whitesmoke;
-    border-top: 1px solid #c0bbb0ab; 
+    border-top: 1px double #c0bbb0ab; 
 }
 
 
@@ -254,8 +261,8 @@ nav a {
     left: 50%;
                                                      /* -webkit-transform: translateY(-50%) translateX(-50%); */
     transform: translateY(-50%) translateX(-50%);
-    padding: 20px;
-    width: 30vh;
+    width: 185px;
+    height: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -310,13 +317,16 @@ nav a {
 
 .skill-card img {
     width: 100%;
+    max-width: 130px;
+    margin: 0 auto;
+    height: auto;
 }
 
 .skill-card .skill-card__header {
     position: relative;
     background-color: #e8edf3;
     height: 170px;
-    margin: -20px -20px 20px -20px;
+    margin: 0 auto;
     transition: height 0.5s;
     overflow: hidden;
 }
@@ -369,6 +379,28 @@ nav a {
 }
 
 
+.invitation p {
+    margin-top: 5em;
+}
+
+.invitation img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-decoration: none;
+    border-color: none!important;
+    color: #f2b632;
+    border-radius: 50%;
+}
+
+
+
+.invitation img:hover, .invitation img:focus {
+    transform: scale(1.1,1.1); /* Standard syntax */
+    transition-duration: 1s;
+    border: 2px solid  #f2b632;
+}
+
 
 /************* REVIEW  *******************/
 
@@ -377,11 +409,28 @@ nav a {
 }
 
 #reviews .testimonial__photo img {
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
+}
+
+
+#reviews .testimonial__photo img[alt*="Jane Doe"] {
+    border: 25px double silver;
+}
+
+#reviews .testimonial__photo img[alt*="Charles Quimpo"] {
+    border: 25px double darkgoldenrod;
+}
+
+#reviews .testimonial__photo img[alt*="Ivan Calimlim"] {
+    border: 25px double tan;
+}
+
+#reviews .testimonial__photo img[alt*="John Doe"] {
+    border: 25px double lightslategray;
 }
 
 .blockquote > p {
@@ -433,7 +482,7 @@ textarea {
     -ms-transform: scale(1,1); /* IE 9 */
     -webkit-transform: scale(1,1); /* Safari */
     transform: scale(1.1,1.1); /* Standard syntax */
-    background-color: whitesmoke;
+    transition-duration: 2s;
     border: 2px solid  #f2b632;
     color:  #393D3F!important;
 }
@@ -492,8 +541,9 @@ textarea {
         color: whitesmoke;
     }
 
+
     #skills {
-        padding: 3em 1em 5em 1em;
+        padding: 8em 1em 5em 1em;
     }
 
     .blockquote:first-of-type,
@@ -560,9 +610,9 @@ textarea {
     }
 
     /*container adjustments*/
-    #skills {
+    /* #skills {
         padding: 3em 1em 5em 1em;
-    }
+    } */
 
     #reviews {
         padding: 3em!important;
@@ -576,8 +626,14 @@ textarea {
 
 
     /* skill card spacing */
-    .margin-top {
+
+    .skill-card
+    /* .margin-top {
         margin-top: 1em;
+    } */
+
+    #skills col-lg-10:first-of-type {
+        padding: inherit;
     }
 
 
@@ -611,7 +667,7 @@ textarea {
         -ms-transform: scale(1,1); /* IE 9 */
         -webkit-transform: scale(1,1); /* Safari */
         transform: scale(1.1,1.1); /* Standard syntax */
-        background-color: whitesmoke;
+        transition-duration: 2s;
         border: 2px solid  #f2b632;
         color:  #393D3F!important;
     }
@@ -717,8 +773,10 @@ textarea {
     }
 
     nav button img {
-        height: 30px;
-        width: 30px;
+        width: 100%;
+        height: auto;
+        max-width: 30px;
+
     }
 
     .navbar-toggler>.close {
@@ -857,7 +915,7 @@ textarea {
         -ms-transform: scale(1,1); /* IE 9 */
         -webkit-transform: scale(1,1); /* Safari */
         transform: scale(1.1,1.1); /* Standard syntax */
-        background-color: whitesmoke;
+        transition-duration: 2s;
         border: 2px solid  #f2b632;
         color:  #393D3F!important;
     }
@@ -872,7 +930,6 @@ textarea {
         color:  whitesmoke!important;
         border-bottom: transparent;
         font-weight: 700;
-        transition-duration: 2s;
     }
 
     .blockquote a:focus {
