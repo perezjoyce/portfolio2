@@ -38,10 +38,16 @@
     background-color: whitesmoke;        
 }
 
-#about, #reviews, #contact, #skills, #projects {
+#about, #contact, #skills, #projects {
     height: fit-content!important;
     padding: 20vh 10vh;
 }
+
+#reviews {
+    height: fit-content;
+    padding: 20vh;
+}
+    
 
 #contact {
     background-color: #252934;
@@ -366,47 +372,43 @@ nav a {
 
 /************* REVIEW  *******************/
 
-blockquote {
-    font-size: 14px;
-    margin-top: 1em;
-    /* background-color: whitesmoke; */
-    padding: 2em;
-    color: #393D3F;
-    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
-}
-
-blockquote > p {
-    font-size: 16px;
-    font-family: 'Roboto',sans-serif;
-}
-
-blockquote footer {
-    font-size: 16px;
-    font-family: 'Roboto',sans-serif;
-}
-
-blockquote a {
-    color:#f2b632;
-    font-size: 1em;
-}
-
-blockquote a:hover {
-    color: #f4aa07;
-    text-decoration: none;
-}
-
-blockquote p::before {
+.testimonial {
     position: relative;
-    content: "\201C";
-    display: block;
-    width: 1005;
-    text-align: center;
-    line-height: .8;
-    font-size: 5em;
-    font-family: 'Roboto';
-    color: #f4aa07;
-
 }
+
+#reviews .testimonial__photo img {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.blockquote > p {
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    overflow: hidden;
+}
+
+.testimonial__footer {
+    font-size: 14px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.blockquote a {
+    color:#f2b632;
+}
+
+.blockquote a:hover {
+    color: #f7c75d;
+    text-decoration: none;
+    font-weight: 800;
+    
+}
+
+
+
+
 
 /************* CONTACT PAGE **************/
 /* clip path tool: https://bennettfeely.com/clippy/ */
@@ -431,6 +433,9 @@ textarea {
     -ms-transform: scale(1,1); /* IE 9 */
     -webkit-transform: scale(1,1); /* Safari */
     transform: scale(1.1,1.1); /* Standard syntax */
+    background-color: whitesmoke;
+    border: 2px solid  #f2b632;
+    color:  #393D3F!important;
 }
 
 .form-control:focus, .form-control:active, textarea:focus, textarea:active {
@@ -478,21 +483,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************* DESKTOP **************/
 
 @media only screen and (min-width: 961px) {
@@ -505,6 +495,51 @@ textarea {
     #skills {
         padding: 3em 1em 5em 1em;
     }
+
+    .blockquote:first-of-type,
+    .blockquote:nth-of-type(2),
+    .blockquote:nth-of-type(3) {
+        margin-bottom: 10em;
+    }
+
+    
+
+    .blockquote p::before {
+        position: static;
+        content: "\201C";
+        /* display: inline-block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2.5em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+    
+    .blockquote p::after {
+        position: static;
+        content: " \201D";
+        /* display: block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+
+    /* review placements */
+    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+        float: left;
+        margin-right: 1em;
+    }
+
+    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+        float: right;
+        margin-left: 1em;
+    }
+
+    
 
 
    
@@ -537,10 +572,32 @@ textarea {
         padding: 10em 3em 3em 3em;
     }
 
+    
+
 
     /* skill card spacing */
     .margin-top {
         margin-top: 1em;
+    }
+
+
+
+    /* reviews spacing */
+    .blockquote .testimonial__footer > span, blockquote .testimonial__footer a {
+        display: block;
+        text-align: center;
+    }
+
+    .blockquote {
+        margin-bottom: 6em;
+    }
+
+    .blockquote:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .blockquote .hide {
+        display: none!important;
     }
 
     /* since hover does not apply to desktop*/
@@ -554,6 +611,9 @@ textarea {
         -ms-transform: scale(1,1); /* IE 9 */
         -webkit-transform: scale(1,1); /* Safari */
         transform: scale(1.1,1.1); /* Standard syntax */
+        background-color: whitesmoke;
+        border: 2px solid  #f2b632;
+        color:  #393D3F!important;
     }
 
     #footer .fab:focus {
@@ -565,6 +625,55 @@ textarea {
         color: whitesmoke!important;
     }
 
+    
+    .blockquote a:focus {
+        color: #f7c75d;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .blockquote p::before {
+        position: static;
+        content: "\201C";
+        /* display: inline-block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2.5em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+    
+    .blockquote p::after {
+        position: static;
+        content: " \201D";
+        /* display: block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+    
+    /* review placements */
+    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+
+    }
+
+    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
+    
 
 
 
@@ -634,8 +743,13 @@ textarea {
         padding: 10em .5em 5em .5em;
     }
 
-    blockquote {
+    .blockquote {
         padding: 0;
+        margin-bottom: 5em;
+    }
+
+    .blockquote:last-of-type {
+        margin-bottom: 0;
     }
 
     /* skill card spacing */
@@ -645,19 +759,61 @@ textarea {
 
 
     /* review area adjustments */
-    blockquote {
-        margin-top: 1em;
+    .blockquote {
         color: #393D3F;
     }
 
-    blockquote footer span, blockquote footer a {
+    .blockquote .testimonial__footer > span, blockquote .testimonial__footer a {
         display: block;
         text-align: center;
     }
 
-    blockquote .hide {
+    .blockquote .hide {
         display: none!important;
     }
+
+    .blockquote p::before {
+        position: static;
+        content: "\201C";
+        /* display: inline-block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2.5em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+    
+    .blockquote p::after {
+        position: static;
+        content: " \201D";
+        /* display: block;  */
+        width: 1005;
+        text-align: center;
+        line-height: .7;
+        font-size: 2em;
+        font-family: 'Roboto';
+        color: #f4aa07;
+    }
+
+    /* review placements */
+    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+
+    }
+
+    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
+
 
     /* clip path angle */
     #contact {
@@ -701,13 +857,16 @@ textarea {
         -ms-transform: scale(1,1); /* IE 9 */
         -webkit-transform: scale(1,1); /* Safari */
         transform: scale(1.1,1.1); /* Standard syntax */
+        background-color: whitesmoke;
+        border: 2px solid  #f2b632;
+        color:  #393D3F!important;
     }
 
     #footer .fab:focus {
         color: #f2b632;
     }
     
-     .nav-link:active, .nav-link:focus, .nav-link:visited { 
+    .nav-link:active, .nav-link:focus, .nav-link:visited { 
         text-decoration-line: underline;
         text-decoration-color: #f2b632;
         color:  whitesmoke!important;
@@ -715,6 +874,11 @@ textarea {
         font-weight: 700;
         transition-duration: 2s;
     }
+
+    .blockquote a:focus {
+        color: #f7c75d;
+        text-decoration: none;
+        font-weight: 800;
 
     
 
