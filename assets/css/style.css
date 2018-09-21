@@ -59,7 +59,9 @@
 
 #contact {
     padding: 20vh 10vh 10vh 10vh;
-    background-color: #252934;
+    /* background-color: rgba(0,0,0,0.5); */
+    background-image: url(../images/frontend.png);
+    opacity: 0.5;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
     clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0, 50% 13%);
 }
@@ -340,7 +342,7 @@ nav a {
     width: 128px;
     height: 128px;
                                                 /* transition: -webkit-transform 0.5s; */
-    transition: transform 0.5s;
+    transition: transform 2s;
                                                 /* transition: transform 0.5s, -webkit-transform 0.5s; */
 }
 
@@ -378,10 +380,6 @@ nav a {
 }
 
 
-.invitation p {
-    margin-top: 5em;
-}
-
 .invitation img {
     height: 50px;
     width: 50px;
@@ -394,9 +392,10 @@ nav a {
 
 
 
-.invitation img:hover, .invitation img:focus {
+.invitation img:hover {
     transform: scale(1.1,1.1); /* Standard syntax */
     transition-duration: 1s;
+    transition-delay: 0s;
     border: 2px solid  #f2b632;
 }
 
@@ -416,7 +415,7 @@ nav a {
     color: transparent;
     position: relative;
     vertical-align: bottom;
-    box-shadow: none!important;
+    /* box-shadow: none!important; */ 
   }
 
   #projects .project-btn {
@@ -426,6 +425,7 @@ nav a {
       background: #f2b632;   
       color: white;
       box-shadow: none!important;
+      /* position: absolute; */
   }
 
   #projects .project-btn:hover, projects .project-btn:active, projects .project-btn:focus {
@@ -457,6 +457,7 @@ nav a {
     transition: all .25s linear;
     background-color: rgba(255, 255, 255, 0.5);
     color: #677077;
+    display: flex;
   }
   
   #projects figure img {
@@ -568,7 +569,7 @@ textarea {
 
 #footer i {
     padding: .4em;
-    border: .5px solid #252934;
+    /* border: .5px solid #252934; */
     border-radius: 50%;
 }
 
@@ -659,7 +660,19 @@ textarea {
         margin-left: 1em;
     }
 
-    
+    /* invitation elements spacing */
+
+    #skills .invitation p {
+        margin-top: 5em;
+    }
+
+    #projects .invitation p {
+        margin-top: 9em;
+    }
+
+    #projects .invitation a {
+        margin-top: 2em;
+    }
 
 
    
@@ -800,6 +813,27 @@ textarea {
     }
 
 
+    /* invitation elements spacing */
+
+    #skills .invitation p {
+        margin-top: 5em;
+    }
+
+    #projects .invitation p {
+        margin-top: 5em;
+    }
+
+    #projects .invitation a {
+        margin-top: 3em;
+    }
+
+    #reviews .invitation p {
+        margin-top: 5em;
+    }
+
+    .invitation img {
+        border: 2px solid  #f2b632;
+    }
     
 
 
@@ -1022,6 +1056,30 @@ textarea {
         color: #f7c75d;
         text-decoration: none;
         font-weight: 800;
+    }
+
+    /* invitation elements spacing */
+
+    #skills .invitation p {
+        margin-top: 5em;
+    }
+
+    #projects .invitation p {
+        margin-top: 5em;
+    }
+
+    #projects .invitation a {
+        margin-top: 3em;
+    }
+
+    #reviews .invitation p {
+        margin-top: 5em;
+    }
+
+    .invitation img {
+        border: 2px solid  #f2b632;
+    }
+
 
     
 
