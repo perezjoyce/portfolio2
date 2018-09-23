@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="assets/images/jp-3.jpg">
     
     <!-- google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -30,25 +30,56 @@
 
     <!-- home -->
     <section class="container-fluid" id="home">
-       
 
-        <!-- NESTED ABOUT -->
-        <div class="container-fluid">
+
+        <!-- makes seamless effect possible -->
+        <nav class="navbar sticky-top" id="navbar__home">
+            <a class="navbar-brand ml-lg-5 ml-md-3" href="#home">
+                <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="navbar__logo" alt="personal logo">
+            </a>
+        </nav>
+   
+       
+        <!-- the real home -->
+        <div class="container-fluid justify-content-center">
+        
+                
                 <div class="d-flex flex-row justify-content-center" id="iam-1">	
-                    <p class="text-center text-uppercase">Joyce Perez&nbsp;</p>
+                    <h1 class="display-1 text-center text-uppercase font-weight-heavy text-light">JOYCE PEREZ</h1>
                 </div>
+
+
                 <div class="d-flex flex-row justify-content-center" id="iam-2">
-                    <span class="inner text-center">
-                        <br>Curricularist
-                        <br>Instructional Designer
-                        <br>Web Developer
-                        <br>Lover
-                    </span> 
+                    <p class="inner text-center text-light font-weight-light">
+                        <br><span class="description">Web Developer</span>
+                        <br><span class="description">Curricularist</span>
+                        <br><span class="description">Titser</span>
+                        <br><span class="description">Mowdel</span>
+                        <br><span class="description"></span>
+                        <br> <!--extra br seems to make scroll better -->
+                    </p> 
                 </div>
-            </div>
-            <!-- end of nested about container-->
+
+<!-- NOT WORKING  -->
+                <!-- <div class="row">
+
+                    <div class="col-1">
+                    <div class="col-10 justify-content-center text-center">
+                        <a href="#about" class="font-weight-light">
+                                EXPLORE
+                        </a>
+                    </div>
+                    <div class="col-1"></div>
+
+                </div>
+
+                </div class="d-flex flex-column text-center justify-content-center scroll" id="home__invitation">
+                        
+                <div> -->
+<!-- END OF NOT WORKING -->
+                
         </div>
-        <!-- end of about container col -->
+        <!-- end of container for home elements -->
 
 
 
@@ -59,8 +90,8 @@
 
 
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toogleable-sm sticky-top">
+    <!--the real navbar -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toogleable-sm sticky-top" id="navbar__main">
 
         <!-- position indicator -->
         <progress value="0" id="progressbar">
@@ -72,16 +103,14 @@
 
       
         <!-- logo -->
-        <a class="navbar-brand ml-lg-5 ml-md-3" href="#home">
-            <img src="assets/images/jp-3.jpg" class="d-inline-block align-top" id="navbar__logo" alt="personal logo">
-        </a>
+        <!-- <a class="navbar-brand ml-lg-5 ml-md-3" href="#"></a> -->
 
 
         
         <!-- toggler -->
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbar--collapse" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="my-1 mx-2 close font-weight-normal">X</span>
-            <span class="navbar-toggler-icon"><img src="assets/images/down2.png"></span>
+        <button class="navbar-toggler navbar-toggler-right collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbar--collapse" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="my-0 mx-0 close font-weight-normal">X</span>
+            <span class="navbar-toggler-icon"><img src="assets/images/down.png"></span>
         </button>
 
 
@@ -89,11 +118,12 @@
         <!-- collapse -->
         <div class="collapse navbar-collapse mr-lg-5 mr-md-3 mx-0;" id="navbar--collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#about">ABOUT</a></li>
-                <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#skills">SKILLS</a></li>
-                <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#reviews">REVIEWS</a></li>
-                <li class="nav-item text-light font-weight-light"><a class="nav-link" href="#contact">CONTACT</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#home">HOME</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#about">ABOUT</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#skills">SKILLS</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#reviews">REVIEWS</a></li>
+                <li class="nav-item font-weight-light"><a class="nav-link" href="#contact">CONTACT</a></li>
                 <!-- end of nav-items -->
             </ul>
             <!-- end of navbar-nav -->
@@ -118,7 +148,7 @@
                 <!-- NESTED ABOUT -->
 
                 <div class="row justify-content-center">
-                    <h1 class="display-6">About</h1>
+                    <h1 class="display-6 font-weight-heavy">ABOUT</h1>
                 </div>
 
         
@@ -131,8 +161,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-12" id="about__content">
                         <div class="about__content justify-content-center">
                             <p class="font-weight-light">Hi! I'm <strong>Joyce</strong> -- a web developer with both frontend and backend skills.</p> 
-                            <p class="font-weight-light">In a previous career, I was an education consultant who developed curricula to improve learning outcomes.</p>
-                            <p class="font-weight-light mb-5">My experience as a curricularist brought me close to my true calling-- building web applications that matter.</p>  
+                            <p class="font-weight-light">In a previous career, I was an education consultant who developed curricula to improve learning outcomes.</p> 
+                            <p class="font-weight-light mb-5">My experience ultimately led me close to my true calling-- building web applications that matter.</p>
                         
                             <p class="font-weight-heavy text-center invitation mt-5">COME, SEE MY WORK.</p>
                             <div class="row invitation justify-content-center ">
@@ -206,7 +236,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="text-center">
-                                                <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">Visit Site</button>
+                                                <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">VISIT SITE</button>
                                             </div>
                                         </div>
                                     
@@ -234,7 +264,7 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <div class="text-center">
-                                                    <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">Visit Site</button>
+                                                    <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">VISIT SITE</button>
                                                 </div>
                                             </div>
                                         
@@ -267,7 +297,7 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12">
                                                 <div class="text-center">
-                                                    <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">Visit Site</button>
+                                                    <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">VISIT SITE</button>
                                                 </div>
                                             </div>
                                         
@@ -299,7 +329,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="text-center">
-                                                <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">Visit Site</button>
+                                                <button type="text" class="btn form-btn px-5 py-1 font-weight-light project-btn">VISIT SITE</button>
                                             </div>
                                         </div>
                                     
@@ -314,7 +344,7 @@
                         <!-- scroll invitation -->
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="row mt-5 justify-content-center invitation">
-                                <p class="font-weight-light text-center">I craft clean, thoughful &<span class="break-sm">responsive websites with the following skills...</span><p>
+                                <p class="font-weight-normal text-center">I craft clean, thoughful &<span class="break-sm">responsive websites with the following skills...</span><p>
                             </div>
                             <div class="row invitation justify-content-center">
                                 <a href="#skills"><img src="assets/images/down.png" alt="scroll down"></a>
@@ -356,7 +386,7 @@
                 <!-- <div class="container"> -->
 
                     <div class="row justify-content-center">
-                        <h1 class="display-6">Skills</h1>
+                        <h1 class="display-6 font-weight-heavy">SKILLS</h1>
                     </div>
 
 
@@ -521,7 +551,7 @@
                     <!-- second testimonial -->
                     <div class="testimonial mt-5">
                         <div class="testimonial__photo">
-                            <img src="assets/images/testimonial__photo-2.jpg" alt="Charles Quimpo">
+                                <img src="assets/images/testimonial__photo-2.jpg" alt="Charles Quimpo">
                         </div>
                         <div class="testimonial__text blockquote">
                             <br>
@@ -615,7 +645,7 @@
                 <!-- <div class="container-fluid"> -->
 
                     <div class="row justify-content-center">
-                        <h1 class="display-6 text-light">Contact</h1>
+                        <h1 class="display-6 text-light font-weight-heavy">CONTACT</h1>
                     </div>
                     <!-- end of first contact row -->
 
@@ -636,10 +666,10 @@
                         <div class="form-row mt-3 no-margin-top" id="contact__name">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                                <input type="text" class="form-control" placeholder="First name">
+                                <input type="text" class="form-control" placeholder="Name*" required>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                                <input type="text" class="form-control" placeholder="Last name" id="last-name">
+                                <input type="text" class="form-control" placeholder="Company*" id="company" required>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -648,7 +678,7 @@
                         <div class="form-row mt-3 no-margin-top">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" placeholder="Email*" required>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 text-left">   
                                 <input type="number" class="form-control" placeholder="Phone">
@@ -661,7 +691,7 @@
                         <div class="row mt-3 no-gutters">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8">
-                                <textarea class="form-control" name="message" id="message" rows="8" placeholder="Your Message"></textarea></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message"></textarea></textarea>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -689,12 +719,12 @@
 
 
                     <!-- scroll invitation -->
-                    <div class="d-flex flex-column mt-5 invitation center">
+                    <div class="d-flex flex-column mt-5 center" id="scroll">
                         <div class="d-flex justify-content-center">
                             <a href="#home"><img src="assets/images/up.png" alt="scroll up"></a>
                         </div>
                         <div class="text-center mt-2">
-                            <div class="font-weight-light text-light text-center">Top</div>
+                            <div class="font-weight-light text-light text-center">SCROLL UP</div>
                         </div>
                     </div>
                     <!-- end of scroll invitation -->
@@ -731,7 +761,7 @@
 
 
                 <div class="d-flex flex-row justify-content-center">
-                    <small class="text-dark font-weight-light text-uppercase text-monospace">Joyce <span class="hide">A.</span> Perez &copy; 2018</small>
+                    <small class="text-dark font-weight-light text-uppercase text-monospace">Joyce <span class="text-dark hide font-weight-light">A.</span> Perez &copy; 2018</small>
                 </div>
 
             </div>

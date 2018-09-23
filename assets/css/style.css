@@ -25,22 +25,21 @@ div .long {
     
 } */
 
-
-html {
-    scroll-behavior: smooth;
-}
 /************* FONTS **************/
 
 * {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Open Sans',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.nav-item, h1, h2 {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
+.text-light {
+    color: whitesmoke;
+}
+
+.display-1 {
+    font-weight: 900;
 }
 
 
@@ -51,9 +50,11 @@ html {
     height: 100vh;
 }
 
+
+
 .navbar, #footer {
     height: 10vh;
-    background: #252839;
+    /* background: #252839; */
 }
 
 #skills {
@@ -101,7 +102,221 @@ html {
 }
 
 
-/************* LANDING PAGE **************/
+/************* HOME **************/
+
+/* navbar */
+#navbar__home {
+    background: transparent;
+    float: left;
+}
+
+#navbar__main {
+    background: #999;
+    z-index: 1;
+}
+
+
+#navbar__home img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* invitation animation */
+
+/* 
+
+
+/* background */
+
+#home {
+    font-family: 'Roboto', sans-serif;
+	color: #fff;
+    background-size: 400% 400%;   
+    background: #304352; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #304352,  #999c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #304352,  #999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    /* background: #999;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #999, #393D3F, #252839, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #999, #393D3F, #252839, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-animation: Gradient 2s ease infinite;
+	-moz-animation: Gradient 2s ease infinite;
+    animation: Gradient 12 ease infinite;
+    /* opacity: 0.3; */
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Animation */
+/* Inspired by: https://freebiesupply.com/blog/css-text-effects-from-codepen/ */
+
+
+#iam-1 {
+    padding-top: 5em;
+    padding-bottom: .3em;
+    font-size: 2em;
+    color: #999; 
+    text-align: center;
+    width: 100%;
+}
+
+#iam-2 {
+    font-size: 2em;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1.2em;
+    padding: 0;
+}
+
+#iam-1 p {
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#iam-2 .inner {
+    display: inline-block;
+    color: #e74c3c;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+  
+    /*animation*/
+    /* -webkit-animation:move 5s;
+    -moz-animation:move 5s;
+    -ms-animation:move 5s;
+    -o-animation:move 5s; */
+    animation:move 5s;
+    
+
+    /*animation-iteration-count*/
+    /* -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite; */
+    animation-iteration-count:infinite;
+    
+
+    /*animation-delay*/
+    /* -webkit-animation-delay:2s;
+    -moz-animation-delay:2s;
+    -ms-animation-delay:2s;
+    -o-animation-delay:2s; */
+    animation-delay:2s;
+}
+
+@keyframes move {
+    0%  { top: 0px; }
+    /* 10% { top: -25px;} */
+    20% { top: -50px; }
+    /* 30% { top: -75px; } */
+    40% { top: -100px; }
+    /* 50% { top: -125px; } */
+    60% { top: -150px; }
+    /* 70% { top: -175px; } */
+    80% { top: -200px; }
+    /* 90% { top: -225px; } */
+    100% {top: -250px; } 
+}
+  
+                                /* @-webkit-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                }
+
+                                @-moz-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                }
+
+                                @-o-keyframes move {
+                                    0%  { top: 0px; }
+                                    20% { top: -50px; }
+                                    40% { top: -100px; }
+                                    60% { top: -150px; }
+                                    80% { top: -200px; }
+                                } */
+
+
+
 
 
 
@@ -115,6 +330,7 @@ html {
 }
 .about__photo {
     background: url(../images/me__wink.gif) center center;
+    background-color: transparent;
     background-repeat: no-repeat;
     width: 15em;
     height: 15em;
@@ -125,7 +341,7 @@ html {
     transform: translate(-50%, -50%); 
     padding: 0;
     border-radius: 50%;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(155, 131, 26, 0.4);
     text-align: center;
 }
 
@@ -229,7 +445,7 @@ progress::-webkit-progress-bar {
 
 .progress__container {
     width: 100%;
-    background-color: transparent;
+    background-color: #999;
     position: fixed;
     top: 0;
     left: 0;
@@ -245,113 +461,8 @@ progress::-webkit-progress-bar {
 }
 
 progress {
-    background: #252839;
+    background: #999;
 }
-
-
-/************* NAVBAR **************/
-
-#navbar__logo {
-    width: 50px; 
-    height: 50px;
-    border-radius: 50%;
-}
-
-nav a {
-    color: whitesmoke;
-}
-
-
-/************* ABOUT *********************/
-/* Animation */
-/* Inspired by: https://freebiesupply.com/blog/css-text-effects-from-codepen/ */
-
-
-#iam-1 {
-    padding-top: 5em;
-    padding-bottom: .3em;
-    font-size: 2em;
-    color: #999; 
-    text-align: center;
-    width: 100%;
-}
-
-#iam-2 {
-    font-size: 2em;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 1.2em;
-    padding: 0;
-}
-
-#iam-1 p {
-    height: 50px;
-    overflow: hidden;
-    margin: 0;
-}
-
-#iam-2 .inner {
-    display: inline-block;
-    color: #e74c3c;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-  
-    /*animation*/
-                                /* -webkit-animation:move 5s;
-                                -moz-animation:move 5s;
-                                -ms-animation:move 5s;
-                                -o-animation:move 5s; */
-    animation:move 5s;
-
-    /*animation-iteration-count*/
-                                /* -webkit-animation-iteration-count:infinite;
-                                -moz-animation-iteration-count:infinite;
-                                -ms-animation-iteration-count:infinite;
-                                -o-animation-iteration-count:infinite; */
-    animation-iteration-count:infinite;
-
-    /*animation-delay*/
-                                /* -webkit-animation-delay:2s;
-                                -moz-animation-delay:2s;
-                                -ms-animation-delay:2s;
-                                -o-animation-delay:2s; */
-    animation-delay:1s;
-}
-
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-    100% {top: -250px; }
-}
-  
-                                /* @-webkit-keyframes move {
-                                    0%  { top: 0px; }
-                                    20% { top: -50px; }
-                                    40% { top: -100px; }
-                                    60% { top: -150px; }
-                                    80% { top: -200px; }
-                                }
-
-                                @-moz-keyframes move {
-                                    0%  { top: 0px; }
-                                    20% { top: -50px; }
-                                    40% { top: -100px; }
-                                    60% { top: -150px; }
-                                    80% { top: -200px; }
-                                }
-
-                                @-o-keyframes move {
-                                    0%  { top: 0px; }
-                                    20% { top: -50px; }
-                                    40% { top: -100px; }
-                                    60% { top: -150px; }
-                                    80% { top: -200px; }
-                                } */
 
 
 
@@ -420,7 +531,7 @@ nav a {
     /* transition-delay: 1.25s; */
 }
 
-  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
     /* transition-delay: 1.5s; */
 }
 
@@ -490,7 +601,9 @@ nav a {
 }
 
 
-.invitation img {
+
+/* ****************** INVITATION  *******************/
+.invitation img, #scroll img {
     height: 50px;
     width: 50px;
     display: block;
@@ -502,11 +615,12 @@ nav a {
 
 
 
-.invitation img:hover {
+.invitation img:hover, #scroll img:hover {
     transform: scale(1.1,1.1); /* Standard syntax */
     transition-duration: 1s;
     transition-delay: 0s;
     border: 2px solid  #f2b632;
+    scroll-behavior: auto;
 }
 
 #skills button {
@@ -533,6 +647,10 @@ nav a {
     top: 50%;
     transform: translate(-50%, -50%)
     
+}
+
+#scroll {
+    scroll-behavior: smooth;
 }
 
 
@@ -616,23 +734,25 @@ nav a {
     width: 100%;
     max-width: 200px;
     height: auto;
+    display: block;
 }
 
 
 #reviews .testimonial__photo img[alt*="Jane Doe"] {
-    border: 25px double silver;
+    border: 25px double rgb(193,185,175);
 }
 
 #reviews .testimonial__photo img[alt*="Charles Quimpo"] {
-    border: 25px double wheat;
+    border: 25px double rgb(204,197,190);
 }
 
+
 #reviews .testimonial__photo img[alt*="Ivan Calimlim"] {
-    border: 25px double tan;
+    border: 25px double #d7cdcc;
 }
 
 #reviews .testimonial__photo img[alt*="John Doe"] {
-    border: 25px double lightslategray;
+    border: 25px double #d7d7cc;
 }
 
 .blockquote > p {
@@ -687,7 +807,7 @@ textarea {
     -webkit-transform: scale(1,1); /* Safari */
     transform: scale(1.1,1.1); /* Standard syntax */
     transition-duration: 2s;
-    border: 2px solid  #f2b632;
+    border: 1px solid  #f2b632;
     color:  #393D3F!important;
     border-radius: 0;
 
@@ -742,24 +862,44 @@ textarea {
 
 @media only screen and (min-width: 961px) {
 
+
+    /* nav area */
     .nav-link:active, .nav-link:focus, .nav-link:visited, .nav-link:hover {   
         border-bottom: 1px solid #f2b632;
         color: whitesmoke;
     }
 
+    /* about */
+    #about h1 {
+        margin-bottom: 1em;
+    }
 
+
+    /* skills area */
     #skills {
         height: 100vh;
         padding: 8em 1em 5em 1em;
     }
 
+
+    /* #projects .invitation a {
+        margin-top: 2em;
+    } */
+
+    #projects .break-sm {
+        display: block;
+        text-align: center;
+    }
+
+
+
+    /* review quotes */
     .blockquote:first-of-type,
     .blockquote:nth-of-type(2),
     .blockquote:nth-of-type(3) {
         margin-bottom: 10em;
     }
 
-    
 
     .blockquote p::before {
         position: static;
@@ -785,6 +925,8 @@ textarea {
         color: #f4aa07;
     }
 
+
+
     /* review placements */
     img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
         float: left;
@@ -806,14 +948,7 @@ textarea {
         margin-top: 5em;
     }
 
-    /* #projects .invitation a {
-        margin-top: 2em;
-    } */
-
-    #projects .break-sm {
-        display: block;
-        text-align: center;
-    }
+    
 
 
    
@@ -838,8 +973,12 @@ textarea {
         padding: 3em 1em 5em 1em;
     } */
 
+    #about h1 {
+        margin-bottom: 1em;
+    }
+
     #reviews {
-        padding: 3em!important;
+        padding: 10em 3em 3em 3em!important;
     }
 
     #contact {
@@ -868,7 +1007,6 @@ textarea {
 
 
     /* skill card spacing */
-
     .skill-card
     /* .margin-top {
         margin-top: 1em;
@@ -880,7 +1018,45 @@ textarea {
 
 
 
-    /* reviews spacing */
+   
+   
+
+    /* since hover does not apply to desktop*/
+    .blockquote a:focus {
+        color: #f7c75d;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    #contact .form-btn:focus {
+        box-shadow: none!important;
+        -ms-transform: scale(1,1); /* IE 9 */
+        -webkit-transform: scale(1,1); /* Safari */
+        transform: scale(1.1,1.1); /* Standard syntax */
+        transition-duration: 2s;
+        /* border: 1px solid  #f2b632; */
+        color:  #393D3F!important;
+        border-radius: 0;
+    }
+
+    #footer .fab:focus {
+        color: #f2b632;
+    }
+
+
+    .nav-link:focus {   
+        border-bottom: 1px solid #f2b632;
+        color: whitesmoke!important;
+    }
+
+    .nav-link:active, .nav-link:focus, .nav-link:visited { 
+        border-bottom: 1px solid #f2b632;
+        color: whitesmoke!important;
+    }
+
+
+
+    /* review quotes */
     .blockquote .testimonial__footer > span, blockquote .testimonial__footer a {
         display: block;
         text-align: center;
@@ -898,38 +1074,6 @@ textarea {
         display: none!important;
     }
 
-    /* since hover does not apply to desktop*/
-    .nav-link:focus {   
-        border-bottom: 1px solid #f2b632;
-        color: whitesmoke!important;
-    }
-
-    #contact .form-btn:focus {
-        box-shadow: none!important;
-        -ms-transform: scale(1,1); /* IE 9 */
-        -webkit-transform: scale(1,1); /* Safari */
-        transform: scale(1.1,1.1); /* Standard syntax */
-        transition-duration: 2s;
-        border: 2px solid  #f2b632;
-        color:  #393D3F!important;
-        border-radius: 0;
-    }
-
-    #footer .fab:focus {
-        color: #f2b632;
-    }
-
-    .nav-link:active, .nav-link:focus, .nav-link:visited { 
-        border-bottom: 1px solid #f2b632;
-        color: whitesmoke!important;
-    }
-
-    
-    .blockquote a:focus {
-        color: #f7c75d;
-        text-decoration: none;
-        font-weight: 800;
-    }
 
     .blockquote p::before {
         position: static;
@@ -973,7 +1117,6 @@ textarea {
 
 
     /* invitation elements spacing */
-
     #projects .break-sm {
         display: block;
         text-align: center;
@@ -1026,47 +1169,8 @@ textarea {
         display: none!important;
     }
 
-    /* for navigation to be accessible */
-    .navbar-nav {
-        text-align: center;
-        background-color: rgba(37, 40, 57, 0.781);
-        padding: 0!important;
-    }
-
-    .navbar--collapse {
-        background-color: #252839;
-        color: whitesmoke;
-        width: 100vh;
-        margin-left: 0!important;
-        margin-right: 0!important;
-    }
-
-    nav button img[src*="assets/images/down2.png"] {
-        width: 30px;
-        height: 30px;
-    }
-
-    .navbar-toggler>.close {
-        display:inline;
-    }
-
-    .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-        display:none;
-    }
-
-    .navbar-toggler span:first-of-type {
-        color: white;
-    }
-
-    .nav-link:first-of-type {
-        margin-top: .5em;
-    }
 
     /* container adjustments */
-
-    
-    
-
     #about, #reviews {
         padding: 10em .5em 5em .5em;
     }
@@ -1079,6 +1183,10 @@ textarea {
         padding: 10em .5em 5em .5em;
     }
 
+    /* home */
+    #home h1 {
+        font-size: 4.5rem;
+    }
 
     /* about page content */
     .about__photo {
@@ -1102,14 +1210,6 @@ textarea {
         text-align: center;
     }
 
-    .blockquote {
-        padding: 0;
-        margin-bottom: 5em;
-    }
-
-    .blockquote:last-of-type {
-        margin-bottom: 0;
-    }
 
     /* skill card spacing */
     .margin-top {
@@ -1119,17 +1219,27 @@ textarea {
 
 
     /* projects */
-    /* icons position */
-
     #projects .icons .mt-3, 
     #projects .icons .my-3 {
         margin-top: 0!important;
     }
 
+    #projects .break-sm {
+        display: block;
+        text-align: center;
+    }
 
-    /* review area adjustments */
+
+
+    /* review quotes adjustments */
     .blockquote {
         color: #393D3F;
+        padding: 0;
+        margin-bottom: 5em;
+    }
+
+    .blockquote:last-of-type {
+        margin-bottom: 0;
     }
 
     .blockquote .testimonial__footer > span, blockquote .testimonial__footer a {
@@ -1165,6 +1275,10 @@ textarea {
         color: #f4aa07;
     }
 
+
+    
+
+
     /* review placements */
     img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
         float: none;
@@ -1180,8 +1294,6 @@ textarea {
         display: block;
         text-align: center;
     }
-
-
 
 
     /* clip path angle */
@@ -1222,34 +1334,8 @@ textarea {
     }
 
 
-    
-
 
     /* since hover does not apply */
-    #contact .form-btn:focus {
-        box-shadow: none!important;
-        border-radius: none!important;
-        -ms-transform: scale(1,1); /* IE 9 */
-        -webkit-transform: scale(1,1); /* Safari */
-        transform: scale(1.1,1.1); /* Standard syntax */
-        transition-duration: 2s;
-        border: 2px solid  #f2b632;
-        color:  #393D3F!important;
-    }
-
-
-
-    #footer .fab:focus {
-        color: #f2b632;
-    }
-    
-    .nav-link:active, .nav-link:focus, .nav-link:visited { 
-        text-decoration-line: underline;
-        text-decoration-color: #f2b632;
-        color:  whitesmoke!important;
-        border-bottom: transparent;
-        font-weight: 700;
-    }
 
     .blockquote a:focus {
         color: #f7c75d;
@@ -1257,10 +1343,88 @@ textarea {
         font-weight: 800;
     }
 
-    #projects .break-sm {
-        display: block;
-        text-align: center;
+
+    #contact .form-btn:focus {
+        box-shadow: none!important;
+        border-radius: none!important;
+        -ms-transform: scale(1,1); /* IE 9 */
+        -webkit-transform: scale(1,1); /* Safari */
+        transform: scale(1.1,1.1); /* Standard syntax */
+        transition-duration: 2s;
+        /* border: 2px solid  #f2b632; */
+        color:  #393D3F!important;
     }
+
+
+    #footer .fab:focus {
+        color: #f2b632;
+    }
+    
+
+    .nav-link:visited { 
+        color:  #393D3F!important;
+    }
+
+
+    .nav-link:focus, 
+    .nav-link:active {
+        color: #393D3F;
+        font-weight: 800;
+
+    }
+
+
+
+    /* for navigation to be accessible */
+    .navbar-nav {
+        text-align: center;
+        background-color: #999;
+        padding: 0!important;
+        z-index: 2;
+    }
+
+    .navbar--collapse {
+        background-color: #999;
+        color: whitesmoke;
+        width: 100%;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .navbar-toggler-icon:active, .navbar-toggler-icon:focus {
+        animation: none!important;
+        box-shadow: none!important;
+    }
+
+    nav button img[src*="assets/images/down2.png"] {
+        width: .2em;
+        height: .2em;
+        border-radius: 50%;
+        border: none;
+        align-self: flex-start;
+    }
+
+    .navbar-toggler>.close {
+        display:block;
+    }
+
+    .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+        display:none;
+        width: .2em;
+        height: .2em;
+        border: 0;
+        align-self: flex-start;
+        visibility: hidden;
+    }
+
+    .navbar-toggler span:first-of-type {
+        color: whitesmoke;
+    }
+
+    .nav-link:first-of-type {
+        margin-top: .5em;
+    }
+    
 
     /* invitation elements spacing */
 
