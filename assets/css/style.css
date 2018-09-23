@@ -50,8 +50,6 @@ div .long {
     height: 100vh;
 }
 
-
-
 .navbar, #footer {
     height: 10vh;
     /* background: #252839; */
@@ -509,30 +507,6 @@ progress {
     transform: translateX(0);
     /* transition-timing-function: cubic-bezier(0, 1.5, 1, 1); */
     transition-duration: 0.8s;
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
-    /* transition-delay: 0.25s; */
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
-    /* transition-delay: 0.5s; */
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
-    /* transition-delay: 0.75s; */
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
-    /* transition-delay: 1s; */
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
-    /* transition-delay: 1.25s; */
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
-    /* transition-delay: 1.5s; */
 }
 
 .skill-card img {
