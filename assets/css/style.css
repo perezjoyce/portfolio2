@@ -46,7 +46,9 @@ div .long {
 }
 
 
-
+ul li {
+    list-style: none!important;
+}
 /************* CONTAINERS **************/
 
 #home {
@@ -1149,6 +1151,10 @@ textarea {
         border: 2px solid  #f2b632;
     } */
     
+    ul li {
+        list-style: none!important;
+        color: white!imporant;
+    }
 
 
 
@@ -1468,7 +1474,11 @@ textarea {
 
 
 
-    
+    ul li {
+        list-style: none!important;
+        color: white!imporant;
+    }
+
 
     
     
