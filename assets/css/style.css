@@ -128,7 +128,8 @@ div .long {
 
 #explore {
     position: absolute;
-    background: linear-gradient(to bottom, #f2b632, #f1b32b);
+    background: linear-gradient(to bottom, #f2b632, #f1b32b, #c5a15b);
+    /*background: #c5a15b;*/
     margin-top: 30vh;
     border-radius: 0;
     padding: .5em 3em;
@@ -150,8 +151,8 @@ div .long {
 
 #explore a:hover {
     text-decoration: none;
-    color: #f4aa07;
-    animation-duration: 3s;
+    color: #f9f9f9;
+    animation-duration: 1s;
     animation-delay: 2s;
 }
 
@@ -162,10 +163,10 @@ div .long {
     position: relative;
     font-family: 'Roboto', sans-serif;
 	color: #fff;
-    background-size: 400% 400%;   
-    background: #304352; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #304352,  #999c); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #304352,  #999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background-size: 400% 400%;    
+    background: #304352; 
+    /* background: -webkit-linear-gradient(to bottom, #304352,  #999c); Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to bottom, #304352,  #999); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
     /* background: #999;  fallback for old browsers */
     /* background: -webkit-linear-gradient(to bottom, #999, #393D3F, #252839, #304352);  /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to bottom, #999, #393D3F, #252839, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
