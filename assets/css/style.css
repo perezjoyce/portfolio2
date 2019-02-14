@@ -49,6 +49,11 @@ div .long {
 ul li {
     list-style: none!important;
 }
+
+.black-text {
+    color:black;
+    text-shadow: 3px 2px white;
+}
 /************* CONTAINERS **************/
 
 #home {
@@ -61,7 +66,15 @@ ul li {
 }
 
 #skills {
-    background-color: whitesmoke;      
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-image: url(../images/header-3.jpeg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	background-position-y: center;
+	background-position-x: right;   
     padding: 20vh 10vh;
 }
 
@@ -108,6 +121,11 @@ ul li {
 /************* HOME **************/
 
 /* home navbar */
+
+.name {
+    text-shadow:3px 3px gray!important;
+}
+
 #navbar__home {
     background: transparent;
     float: left;
@@ -164,14 +182,20 @@ ul li {
 #home {
     position: relative;
     font-family: 'Roboto', sans-serif;
-	color: #fff;
-    background-size: 400% 400%;    
+    color: #fff;
+    background-image: url(../images/header-2.jpeg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	background-position-y: center;
+	background-position-x: right;
+    /* background-size: 400% 400%;    
     background: #304352; 
-    /* background: -webkit-linear-gradient(to bottom, #304352,  #999c); Chrome 10-25, Safari 5.1-6
-    background: linear-gradient(to bottom, #304352,  #999); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+    background: -webkit-linear-gradient(to bottom, #304352,  #999c); Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to bottom, #304352,  #999); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */ */
     /* background: #999;  fallback for old browsers */
     /* background: -webkit-linear-gradient(to bottom, #999, #393D3F, #252839, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to bottom, #999, #393D3F, #252839, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to bottom, #999, #393D3F, #252839, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
     -webkit-animation: Gradient 2s ease infinite;
 	-moz-animation: Gradient 2s ease infinite;
     animation: Gradient 12 ease infinite;
@@ -578,8 +602,10 @@ progress {
 
 .skill-card .skill-card__title {
     text-align: center;
-    padding-top: 2.5%;
+    padding: 10px;
     color: #393D3F;
+    background: white;
+
 }
 
 .skill-card .skill-card__body {
@@ -703,7 +729,7 @@ progress {
   }
   
   #projects figcaption {
-    background-color: rgba(220,220,220,.6);
+    /* background-color: rgba(220,220,220,.6); */
     position: absolute;
     display:flex;
     flex-direction:column;
@@ -747,7 +773,7 @@ progress {
 }
 
 
-#reviews .testimonial__photo img[alt*="Jane Doe"] {
+#reviews .testimonial__photo img[alt*="Christine Llapitan"] {
     border: 25px double rgb(193,185,175);
 }
 
@@ -760,7 +786,7 @@ progress {
     border: 25px double #d7cdcc;
 }
 
-#reviews .testimonial__photo img[alt*="John Doe"] {
+#reviews .testimonial__photo img[alt*="Alan Beraquit"] {
     border: 25px double #d7d7cc;
 }
 
@@ -861,7 +887,9 @@ textarea {
 
 
 
-
+.nav-link, .nav-link, .nav-link, .nav-link {   
+    color: whitesmoke!important;
+}
 
 
 
@@ -874,8 +902,8 @@ textarea {
 
     /* nav area */
     .nav-link:active, .nav-link:focus, .nav-link:visited, .nav-link:hover {   
-        border-bottom: 1px solid #f2b632;
-        color: whitesmoke;
+        border-bottom: 2px solid #f2b632;
+        color: whitesmoke!important;
     }
 
     /* about */
@@ -937,12 +965,12 @@ textarea {
 
 
     /* review placements */
-    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+    img[alt*="Christine Llapitan"], img[alt*="Ivan Calimlim"] {
         float: left;
         margin-right: 1em;
     }
 
-    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+    img[alt*="Charles Quimpo"], img[alt*="Alan Beraquit"] {
         float: right;
         margin-left: 1em;
     }
@@ -1109,7 +1137,7 @@ textarea {
     }
     
     /* review placements */
-    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+    img[alt*="Christine Llapitan"], img[alt*="Ivan Calimlim"] {
         float: none;
         margin: 0 auto;
         display: block;
@@ -1117,7 +1145,7 @@ textarea {
 
     }
 
-    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+    img[alt*="Charles Quimpo"], img[alt*="Alan Beraquit"] {
         float: none;
         margin: 0 auto;
         display: block;
@@ -1293,7 +1321,7 @@ textarea {
 
 
     /* review placements */
-    img[alt*="Jane Doe"], img[alt*="Ivan Calimlim"] {
+    img[alt*="Christine Llapitan"], img[alt*="Ivan Calimlim"] {
         float: none;
         margin: 0 auto;
         display: block;
@@ -1301,7 +1329,7 @@ textarea {
 
     }
 
-    img[alt*="Charles Quimpo"], img[alt*="John Doe"] {
+    img[alt*="Charles Quimpo"], img[alt*="Alan Beraquit"] {
         float: none;
         margin: 0 auto;
         display: block;
